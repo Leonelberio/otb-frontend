@@ -12,7 +12,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="text-white" style={{ backgroundColor: "#6BA02E" }}>
+    <footer className="text-white bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -26,7 +26,7 @@ export default function Footer() {
                 className="h-12 w-auto"
               />
             </div>
-            <p className="text-green-100 mb-4">
+            <p className="text-gray-300 mb-4">
               Le N°1 de la location d&apos;espaces professionnels au Togo.
               Bureaux, salles de conférence et espaces de réception à louer
               facilement à Lomé.
@@ -34,19 +34,19 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
               >
                 <Youtube className="w-5 h-5" />
               </a>
@@ -60,7 +60,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="block hover:text-white transition-colors cursor-pointer"
+                  className="block text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Bureaux privatifs
                 </a>
@@ -68,7 +68,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="block hover:text-white transition-colors cursor-pointer"
+                  className="block text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Salles de réunion
                 </a>
@@ -76,7 +76,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="block hover:text-white transition-colors cursor-pointer"
+                  className="block text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Salles de conférence
                 </a>
@@ -84,7 +84,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="block hover:text-white transition-colors cursor-pointer"
+                  className="block text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Espaces de formation
                 </a>
@@ -92,7 +92,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="block hover:text-white transition-colors cursor-pointer"
+                  className="block text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Salles d&apos;événements
                 </a>
@@ -107,7 +107,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="block hover:text-white transition-colors cursor-pointer"
+                  className="block text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   À propos
                 </a>
@@ -115,7 +115,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="block hover:text-white transition-colors cursor-pointer"
+                  className="block text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Services
                 </a>
@@ -123,7 +123,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="block hover:text-white transition-colors cursor-pointer"
+                  className="block text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Tarifs
                 </a>
@@ -131,7 +131,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="block hover:text-white transition-colors cursor-pointer"
+                  className="block text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   FAQ
                 </a>
@@ -139,7 +139,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="block hover:text-white transition-colors cursor-pointer"
+                  className="block text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Blog
                 </a>
@@ -152,20 +152,20 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Nous contacter</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-green-100" />
-                <span className="text-green-100">+228 91 28 04 54</span>
+                <Phone className="w-4 h-4 text-gray-300" />
+                <span className="text-gray-300">+228 91 28 04 54</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-green-100" />
-                <span className="text-green-100">contact@openthebox.space</span>
+                <Mail className="w-4 h-4 text-gray-300" />
+                <span className="text-gray-300">contact@openthebox.space</span>
               </div>
             </div>
           </div>
         </div>
 
-        <hr className="border-gray-300 my-8" />
+        <hr className="border-gray-700 my-8" />
 
-        <div className="text-center text-green-100">
+        <div className="text-center text-gray-300">
           <p>Copyright © {currentYear || "2025"} OTB, propulsé par Pandore</p>
         </div>
       </div>

@@ -12,25 +12,25 @@ const heroSlides = [
       "Un espace de coworking moderne et convivial où entrepreneurs, freelances et équipes peuvent travailler, collaborer et réseauter dans un environnement stimulant.",
     cta: "Profiter de l'offre",
     backgroundImage: "/reunion-d-affaires.jpg",
-    backgroundColor: "#EF8011",
+    backgroundColor: "#000000",
   },
   {
     id: 2,
-    title: "Un espace de travail flexible et connecté",
+    title: "Un espace de travail flexible et moderne",
     subtitle:
-      "Bureaux privatifs, espaces de collaboration, salles de réunion et zones de détente. Tout ce dont vous avez besoin pour réussir.",
-    cta: "Réserver un bureau",
+      "Bureaux privés, espaces de coworking, salles de réunion et zones de détente pour répondre à tous vos besoins professionnels.",
+    cta: "Découvrir nos espaces",
     backgroundImage: "/reunion-d-affaires.jpg",
-    backgroundColor: "#EF8011",
+    backgroundColor: "#000000",
   },
   {
     id: 3,
     title: "Rejoignez une communauté d'entrepreneurs",
     subtitle:
-      "Événements networking, ateliers et rencontres pour développer votre réseau et faire grandir votre entreprise.",
-    cta: "Découvrir la communauté",
+      "Connectez-vous avec d'autres professionnels, participez à des événements networking et développez votre réseau business.",
+    cta: "Rejoindre la communauté",
     backgroundImage: "/reunion-d-affaires.jpg",
-    backgroundColor: "#EF8011",
+    backgroundColor: "#000000",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  // Auto-advance slides every 5 seconds
+  // Auto-advance slides
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isTransitioning) {
@@ -47,17 +47,15 @@ export default function HeroSection() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [currentSlide, isTransitioning]);
+  }, [isTransitioning]);
 
   const nextSlide = () => {
-    if (isTransitioning) return;
     setIsTransitioning(true);
     setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     setTimeout(() => setIsTransitioning(false), 500);
   };
 
   const prevSlide = () => {
-    if (isTransitioning) return;
     setIsTransitioning(true);
     setCurrentSlide(
       (prev) => (prev - 1 + heroSlides.length) % heroSlides.length
@@ -65,16 +63,14 @@ export default function HeroSection() {
     setTimeout(() => setIsTransitioning(false), 500);
   };
 
-  const goToSlide = (index: number) => {
-    if (isTransitioning || index === currentSlide) return;
+  const goToSlide = (slideIndex: number) => {
     setIsTransitioning(true);
-    setCurrentSlide(index);
+    setCurrentSlide(slideIndex);
     setTimeout(() => setIsTransitioning(false), 500);
   };
 
   return (
     <section className="relative min-h-[600px] flex items-center overflow-hidden">
-      {/* Slides */}
       {heroSlides.map((slide, index) => (
         <div
           key={slide.id}
@@ -83,15 +79,10 @@ export default function HeroSection() {
           }`}
           style={{ backgroundColor: slide.backgroundColor }}
         >
-          {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
-            style={{
-              backgroundImage: `url('${slide.backgroundImage}')`,
-            }}
+            style={{ backgroundImage: `url('${slide.backgroundImage}')` }}
           ></div>
-
-          {/* Content */}
           <div className="relative z-10 w-full h-full flex items-center">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
               <div className="max-w-3xl">
@@ -118,8 +109,7 @@ export default function HeroSection() {
         onClick={prevSlide}
         variant="outline"
         size="icon"
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white border-white/30 hover:border-white/50 transition-all duration-200 z-20"
-        disabled={isTransitioning}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white border-white/20 hover:border-white/40 transition-all duration-200"
       >
         <ChevronLeft className="w-6 h-6" />
       </Button>
@@ -128,30 +118,28 @@ export default function HeroSection() {
         onClick={nextSlide}
         variant="outline"
         size="icon"
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white border-white/30 hover:border-white/50 transition-all duration-200 z-20"
-        disabled={isTransitioning}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white border-white/20 hover:border-white/40 transition-all duration-200"
       >
         <ChevronRight className="w-6 h-6" />
       </Button>
 
       {/* Pagination Dots */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {heroSlides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide
+              currentSlide === index
                 ? "bg-white scale-110"
-                : "bg-white/50 hover:bg-white/75"
+                : "bg-white/50 hover:bg-white/70"
             }`}
-            disabled={isTransitioning}
           />
         ))}
       </div>
 
       {/* Progress Bar */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20 z-20">
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">
         <div
           className="h-full bg-white transition-all duration-500 ease-linear"
           style={{
