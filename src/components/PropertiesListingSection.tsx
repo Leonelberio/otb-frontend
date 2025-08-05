@@ -17,8 +17,7 @@ const dummyProperties = [
     price: "15 000 F/h",
     capacity: "12 pers",
     location: "Rue de la Paix, Lomé",
-    image:
-      "/reunion-d-affaires-de-rendu-3d-et-salle-de-travail-sur-un-immeuble-de-bureaux (1).jpg",
+    image: "/reunion-d-affaires.jpg",
     category: "Salle de conférence",
   },
   {
@@ -28,8 +27,7 @@ const dummyProperties = [
     price: "8 000 F/j",
     capacity: "2 pers",
     location: "Avenue de la Libération, Lomé",
-    image:
-      "/reunion-d-affaires-de-rendu-3d-et-salle-de-travail-sur-un-immeuble-de-bureaux (1).jpg",
+    image: "/reunion-d-affaires.jpg",
     category: "Bureaux",
   },
   {
@@ -39,8 +37,7 @@ const dummyProperties = [
     price: "25 000 F/j",
     capacity: "25 pers",
     location: "Boulevard du 13 Janvier, Lomé",
-    image:
-      "/reunion-d-affaires-de-rendu-3d-et-salle-de-travail-sur-un-immeuble-de-bureaux (1).jpg",
+    image: "/reunion-d-affaires.jpg",
     category: "Salle de formation",
   },
   {
@@ -50,8 +47,7 @@ const dummyProperties = [
     price: "3 000 F/j",
     capacity: "1 pers",
     location: "Quartier Adidogomé, Lomé",
-    image:
-      "/reunion-d-affaires-de-rendu-3d-et-salle-de-travail-sur-un-immeuble-de-bureaux (1).jpg",
+    image: "/reunion-d-affaires.jpg",
     category: "Bureaux",
   },
   {
@@ -61,8 +57,7 @@ const dummyProperties = [
     price: "45 000 F/j",
     capacity: "50 pers",
     location: "Centre-ville, Lomé",
-    image:
-      "/reunion-d-affaires-de-rendu-3d-et-salle-de-travail-sur-un-immeuble-de-bureaux (1).jpg",
+    image: "/reunion-d-affaires.jpg",
     category: "Salle de réception",
   },
   {
@@ -72,8 +67,7 @@ const dummyProperties = [
     price: "20 000 F/j",
     capacity: "6 pers",
     location: "Kodjoviakopé, Lomé",
-    image:
-      "/reunion-d-affaires-de-rendu-3d-et-salle-de-travail-sur-un-immeuble-de-bureaux (1).jpg",
+    image: "/reunion-d-affaires.jpg",
     category: "Bureaux",
   },
 ];

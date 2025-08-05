@@ -31,17 +31,17 @@ const faqData = [
   {
     question: "Comment réserver un espace chez Open The Box ?",
     answer:
-      "Vous pouvez réserver un espace en ligne via notre plateforme, par téléphone au +228 91 28 04 54, ou directement sur place. Notre équipe vous accompagne dans le choix de l&apos;espace le plus adapté à vos besoins.",
+      "Vous pouvez réserver un espace en ligne via notre plateforme, par téléphone au +228 91 28 04 54, ou directement sur place. Notre équipe vous accompagne dans le choix de l'espace le plus adapté à vos besoins.",
   },
   {
-    question: "Quels sont les horaires d&apos;ouverture ?",
+    question: "Quels sont les horaires d'ouverture ?",
     answer:
       "Open The Box est ouvert du lundi au dimanche, de 8h à 20h. Des horaires étendus peuvent être arrangés sur demande pour des événements spéciaux.",
   },
   {
-    question: "Quels types d&apos;espaces proposez-vous ?",
+    question: "Quels types d'espaces proposez-vous ?",
     answer:
-      "Nous proposons des bureaux privatifs, des salles de réunion et conférence, des espaces de formation, des salles d&apos;événements, et des espaces de coworking. Tous nos espaces sont équipés et opérationnels.",
+      "Nous proposons des bureaux privatifs, des salles de réunion et conférence, des espaces de formation, des salles d'événements, et des espaces de coworking. Tous nos espaces sont équipés et opérationnels.",
   },
   {
     question: "Les espaces sont-ils équipés ?",
@@ -178,12 +178,12 @@ export default function ContactFAQSection() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="reservation">
-                        Réservation d&apos;espace
+                        Réservation d'espace
                       </SelectItem>
                       <SelectItem value="visite">Demande de visite</SelectItem>
                       <SelectItem value="devis">Demande de devis</SelectItem>
                       <SelectItem value="information">
-                        Demande d&apos;information
+                        Demande d'information
                       </SelectItem>
                       <SelectItem value="autre">Autre</SelectItem>
                     </SelectContent>
@@ -305,7 +305,7 @@ export default function ContactFAQSection() {
             {/* Call to Action */}
             <div className="mt-8 bg-gradient-to-r from-green-500 to-green-600 rounded-xl p-8 text-center text-white">
               <h4 className="text-xl font-bold mb-4">
-                Besoin d&apos;aide immédiate ?
+                Besoin d'aide immédiate ?
               </h4>
               <p className="mb-6 text-green-100">
                 Notre équipe est disponible pour vous accompagner dans votre
