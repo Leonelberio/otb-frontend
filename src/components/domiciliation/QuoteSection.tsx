@@ -1,9 +1,21 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function QuoteSection() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="py-20 bg-gray-50 relative overflow-hidden">
+      {/* Background Image Overlay */}
+      <div className="absolute inset-0 opacity-60">
+        <Image
+          src="/place.png"
+          alt="Place background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
           Obtenir un devis pour la domiciliation
         </h2>
@@ -12,7 +24,7 @@ export default function QuoteSection() {
           domiciliation de votre entreprise à Lomé.
         </p>
         <Button
-          className="text-white px-8 py-4 text-lg"
+          className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
           style={{ backgroundColor: "#8ABF37" }}
         >
           Demander un devis
