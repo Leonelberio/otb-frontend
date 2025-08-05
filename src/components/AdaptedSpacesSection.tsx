@@ -1,0 +1,86 @@
+import { Button } from "@/components/ui/button";
+import { Building2, MessageCircle, Briefcase } from "lucide-react";
+
+export default function AdaptedSpacesSection() {
+  return (
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Des espaces adaptés à chaque usage
+            </h2>
+
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Besoin d&apos;un bureau privé ou d&apos;une salle pour vos
+              événements ? Open The Box (OTB) vous aide à trouver l&apos;espace
+              parfait, selon votre activité, vos horaires et votre budget.
+            </p>
+
+            {/* Features List */}
+            <div className="space-y-4 mb-10">
+              <div className="flex items-start space-x-3">
+                <div
+                  className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
+                  style={{ backgroundColor: "#8ABF37" }}
+                >
+                  <Building2 className="w-5 h-5 text-white" />
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Bureaux privatifs
+                </p>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div
+                  className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
+                  style={{ backgroundColor: "#8ABF37" }}
+                >
+                  <MessageCircle className="w-5 h-5 text-white" />
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Salles de réunion et conférences
+                </p>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div
+                  className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
+                  style={{ backgroundColor: "#8ABF37" }}
+                >
+                  <Briefcase className="w-5 h-5 text-white" />
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Espaces pour formations, ateliers ou RDV clients
+                </p>
+              </div>
+            </div>
+
+            <Button
+              className="text-white px-8 py-4 text-lg hover:opacity-90"
+              style={{ backgroundColor: "#8ABF37" }}
+            >
+              Réserver un espace
+            </Button>
+          </div>
+
+          {/* Right Image */}
+          <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden">
+            <div
+              className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300"
+              style={{
+                backgroundImage: `url('/reunion-d-affaires-de-rendu-3d-et-salle-de-travail-sur-un-immeuble-de-bureaux (1).jpg')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              {/* Optional overlay for better visual effect */}
+              <div className="absolute inset-0 bg-black/10"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
