@@ -13,7 +13,7 @@ export default function HeroSection() {
         <div
           className="w-full h-full bg-white/10 rounded-tl-3xl"
           style={{
-            backgroundImage: `url('/reunion-d-affaires-de-rendu-3d-et-salle-de-travail-sur-un-immeuble-de-bureaux (1).jpg')`,
+            backgroundImage: `url('/reunion-d-affaires.jpg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
