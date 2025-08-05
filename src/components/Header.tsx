@@ -87,6 +87,16 @@ export default function Header() {
             >
               L&apos;Open Café
             </Link>
+            <Link
+              href="/blog"
+              className={`px-3 py-2 text-sm font-medium transition-colors ${
+                isActive("/blog")
+                  ? "text-green-600"
+                  : "text-gray-700 hover:text-green-600"
+              }`}
+            >
+              Blog
+            </Link>
             <button
               onClick={scrollToContact}
               className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
@@ -188,6 +198,17 @@ export default function Header() {
                 onClick={closeMobileMenu}
               >
                 L&apos;Open Café
+              </Link>
+              <Link
+                href="/blog"
+                className={`block py-3 text-lg font-medium transition-colors border-b border-gray-100 ${
+                  isActive("/blog")
+                    ? "text-green-600"
+                    : "text-gray-700 hover:text-green-600"
+                }`}
+                onClick={closeMobileMenu}
+              >
+                Blog
               </Link>
               <button
                 onClick={scrollToContact}

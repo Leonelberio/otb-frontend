@@ -26,6 +26,7 @@ import {
   Send,
   MessageCircle,
 } from "lucide-react";
+import SafeText from "@/components/ui/SafeText";
 
 const faqData = [
   {
@@ -285,17 +286,17 @@ export default function ContactFAQSection() {
               </h3>
 
               <Accordion type="single" collapsible className="space-y-4">
-                {faqData.map((faq, index) => (
+                {faqData.map((item, index) => (
                   <AccordionItem
                     key={index}
                     value={`item-${index}`}
                     className="border border-gray-200 rounded-lg px-4"
                   >
-                    <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-green-600 transition-colors">
-                      {faq.question}
+                    <AccordionTrigger className="text-left">
+                      <SafeText as="span">{item.question}</SafeText>
                     </AccordionTrigger>
-                    <AccordionContent className="text-gray-600 leading-relaxed">
-                      {faq.answer}
+                    <AccordionContent>
+                      <SafeText as="p">{item.answer}</SafeText>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
