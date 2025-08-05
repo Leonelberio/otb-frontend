@@ -21,6 +21,8 @@ import {
   Clock,
   CreditCard,
   Phone,
+  Users,
+  MapPin,
 } from "lucide-react";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
@@ -28,53 +30,68 @@ import { cn } from "@/lib/utils";
 
 interface Space {
   id: string;
-  name: string;
+  title: string;
   type: string;
-  capacity: number;
-  pricePerHour: number;
-  pricePerDay: number;
+  capacity: string;
+  location: string;
+  image: string;
+  category: string;
 }
 
 const availableSpaces: Space[] = [
   {
     id: "1",
-    name: "Bureau Privatif A",
-    type: "Bureau",
-    capacity: 1,
-    pricePerHour: 5000,
-    pricePerDay: 25000,
+    title: "Salle de Réunion Executive",
+    type: "Salle de conférence premium",
+    capacity: "12 pers",
+    location: "Rue de la Paix, Lomé",
+    image: "/reunion-d-affaires.jpg",
+    category: "Salle de conférence",
   },
   {
     id: "2",
-    name: "Bureau Privatif B",
-    type: "Bureau",
-    capacity: 2,
-    pricePerHour: 7500,
-    pricePerDay: 35000,
+    title: "Bureau Privé Moderne",
+    type: "Espace de travail individuel",
+    capacity: "2 pers",
+    location: "Avenue de la Libération, Lomé",
+    image: "/reunion-d-affaires.jpg",
+    category: "Bureaux",
   },
   {
     id: "3",
-    name: "Salle de Réunion",
-    type: "Salle",
-    capacity: 10,
-    pricePerHour: 15000,
-    pricePerDay: 75000,
+    title: "Salle de Formation",
+    type: "Espace formation et workshop",
+    capacity: "25 pers",
+    location: "Boulevard du 13 Janvier, Lomé",
+    image: "/reunion-d-affaires.jpg",
+    category: "Salle de formation",
   },
   {
     id: "4",
-    name: "Salle de Conférence",
-    type: "Salle",
-    capacity: 20,
-    pricePerHour: 25000,
-    pricePerDay: 120000,
+    title: "Open Space Collaboratif",
+    type: "Espace de coworking ouvert",
+    capacity: "1 pers",
+    location: "Quartier Adidogomé, Lomé",
+    image: "/reunion-d-affaires.jpg",
+    category: "Bureaux",
   },
   {
     id: "5",
-    name: "Espace Coworking",
-    type: "Coworking",
-    capacity: 15,
-    pricePerHour: 3000,
-    pricePerDay: 15000,
+    title: "Salle de Réception VIP",
+    type: "Espace événementiel haut de gamme",
+    capacity: "50 pers",
+    location: "Centre-ville, Lomé",
+    image: "/reunion-d-affaires.jpg",
+    category: "Salle de réception",
+  },
+  {
+    id: "6",
+    title: "Bureau d'Équipe",
+    type: "Espace privé pour équipe",
+    capacity: "6 pers",
+    location: "Kodjoviakopé, Lomé",
+    image: "/reunion-d-affaires.jpg",
+    category: "Bureaux",
   },
 ];
 
@@ -112,10 +129,12 @@ export default function QuoteSection() {
   const calculateQuote = () => {
     if (!selectedSpace || !selectedDate || !selectedTime) return 0;
 
+    // Placeholder calculation - you can implement actual pricing logic
+    const basePrice = 10000; // Base price per hour
     if (duration >= 8) {
-      return selectedSpace.pricePerDay;
+      return basePrice * 6; // Day rate
     } else {
-      return selectedSpace.pricePerHour * duration;
+      return basePrice * duration;
     }
   };
 
@@ -160,40 +179,86 @@ export default function QuoteSection() {
                 />
                 1. Choisissez votre espace
               </h3>
-              <div className="grid gap-3">
-                {availableSpaces.map((space) => (
-                  <div
-                    key={space.id}
-                    className={cn(
-                      "p-4 border-2 rounded-lg cursor-pointer transition-all",
-                      selectedSpace?.id === space.id
-                        ? "border-green-500 bg-green-50"
-                        : "border-gray-200 hover:border-gray-300"
-                    )}
-                    onClick={() => setSelectedSpace(space)}
-                  >
-                    <div className="flex justify-between items-center">
-                      <div>
-                        <h4 className="font-semibold text-gray-900">
-                          {space.name}
-                        </h4>
-                        <p className="text-sm text-gray-600">
-                          {space.type} • {space.capacity} personne
-                          {space.capacity > 1 ? "s" : ""}
-                        </p>
+
+              <Select
+                value={selectedSpace?.id || ""}
+                onValueChange={(value) => {
+                  const space = availableSpaces.find((s) => s.id === value);
+                  setSelectedSpace(space || null);
+                }}
+              >
+                <SelectTrigger className="w-full h-16 p-3">
+                  <SelectValue placeholder="Sélectionner un espace">
+                    {selectedSpace ? (
+                      <div className="flex items-center">
+                        <span className="font-medium text-gray-900">
+                          {selectedSpace.title}
+                        </span>
                       </div>
-                      <div className="text-right">
-                        <p className="font-semibold text-gray-900">
-                          {space.pricePerHour.toLocaleString()} FCFA/h
-                        </p>
-                        <p className="text-sm text-gray-600">
-                          {space.pricePerDay.toLocaleString()} FCFA/jour
-                        </p>
+                    ) : (
+                      "Sélectionner un espace"
+                    )}
+                  </SelectValue>
+                </SelectTrigger>
+                <SelectContent>
+                  {availableSpaces.map((space) => (
+                    <SelectItem key={space.id} value={space.id}>
+                      <div className="flex items-center space-x-3">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden">
+                          <div
+                            className="w-full h-full bg-cover bg-center"
+                            style={{
+                              backgroundImage: `url('${space.image}')`,
+                            }}
+                          />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="font-medium text-gray-900">
+                            {space.title}
+                          </div>
+                          <div className="text-sm text-gray-600">
+                            {space.type} • {space.capacity} • {space.location}
+                          </div>
+                        </div>
+                      </div>
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+
+              {/* Selected Space Preview */}
+              {selectedSpace && (
+                <div className="mt-4 p-4 bg-gray-50 rounded-lg">
+                  <div className="flex items-center space-x-4">
+                    <div className="flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden">
+                      <div
+                        className="w-full h-full bg-cover bg-center"
+                        style={{
+                          backgroundImage: `url('${selectedSpace.image}')`,
+                        }}
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="font-semibold text-gray-900">
+                        {selectedSpace.title}
+                      </h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        {selectedSpace.type}
+                      </p>
+                      <div className="flex items-center space-x-4 text-sm text-gray-600">
+                        <div className="flex items-center">
+                          <MapPin className="w-4 h-4 mr-1" />
+                          {selectedSpace.location}
+                        </div>
+                        <div className="flex items-center">
+                          <Users className="w-4 h-4 mr-1" />
+                          {selectedSpace.capacity}
+                        </div>
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              )}
             </div>
 
             {/* Step 2: Date Selection */}
@@ -306,7 +371,7 @@ export default function QuoteSection() {
                 <div className="bg-white rounded-lg p-6 space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Espace sélectionné:</span>
-                    <span className="font-semibold">{selectedSpace.name}</span>
+                    <span className="font-semibold">{selectedSpace.title}</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Date:</span>
