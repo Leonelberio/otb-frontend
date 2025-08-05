@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Users, MapPin } from "lucide-react";
-import Image from "next/image";
 
 interface PropertyCardProps {
   id: string;

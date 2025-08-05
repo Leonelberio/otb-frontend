@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Building2, Calendar, Star } from "lucide-react";
 
 export default function StatsSection() {
