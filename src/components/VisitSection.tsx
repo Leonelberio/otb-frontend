@@ -11,7 +11,7 @@ export default function VisitSection() {
             <div
               className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300"
               style={{
-                backgroundImage: `url('/reunion-d-affaires-de-rendu-3d-et-salle-de-travail-sur-un-immeuble-de-bureaux (1).jpg')`,
+                backgroundImage: `url('/reunion-d-affaires.jpg')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
