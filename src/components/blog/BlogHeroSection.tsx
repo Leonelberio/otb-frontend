@@ -1,3 +1,5 @@
+import { Newspaper, Briefcase, Building2 } from "lucide-react";
+
 export default function BlogHeroSection() {
   return (
     <section className="relative min-h-[400px] flex items-center bg-black">
@@ -16,11 +18,20 @@ export default function BlogHeroSection() {
               au Togo
             </p>
             <div className="flex items-center justify-center space-x-4 text-white/80">
-              <span>📰 Actualités</span>
+              <span className="flex items-center space-x-2">
+                <Newspaper className="w-5 h-5" />
+                <span>Actualités</span>
+              </span>
               <span>•</span>
-              <span>💼 Conseils business</span>
+              <span className="flex items-center space-x-2">
+                <Briefcase className="w-5 h-5" />
+                <span>Conseils business</span>
+              </span>
               <span>•</span>
-              <span>🏢 Immobilier</span>
+              <span className="flex items-center space-x-2">
+                <Building2 className="w-5 h-5" />
+                <span>Immobilier</span>
+              </span>
             </div>
           </div>
         </div>
