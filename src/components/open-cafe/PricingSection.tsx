@@ -63,8 +63,13 @@ export default function PricingSection() {
             <div
               key={index}
               className={`bg-white rounded-xl p-8 shadow-lg ${
-                index === 1 ? "ring-2 ring-green-500 scale-105" : ""
+                index === 1 ? "scale-105" : ""
               }`}
+              style={{
+                ...(index === 1 && {
+                  boxShadow: "0 0 0 2px #8ABF37",
+                }),
+              }}
             >
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
@@ -81,7 +86,11 @@ export default function PricingSection() {
                 </div>
                 {index === 1 && (
                   <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                    Le plus populaire
+                    <span
+                      style={{ backgroundColor: "#D1FAE5", color: "#8ABF37" }}
+                    >
+                      Populaire
+                    </span>
                   </span>
                 )}
               </div>
@@ -104,7 +113,11 @@ export default function PricingSection() {
                     ? "text-white"
                     : "bg-white text-green-600 border-2 border-green-600 hover:bg-green-600 hover:text-white"
                 }`}
-                style={index === 1 ? { backgroundColor: "#8ABF37" } : {}}
+                style={{
+                  backgroundColor: index === 1 ? "#8ABF37" : "white",
+                  color: index === 1 ? "white" : "#8ABF37",
+                  borderColor: "#8ABF37",
+                }}
               >
                 Choisir ce forfait
               </Button>

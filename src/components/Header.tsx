@@ -56,191 +56,228 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
-                isActive("/")
-                  ? "text-green-600"
-                  : "text-gray-700 hover:text-green-600"
-              }`}
+              className={`${
+                pathname === "/" ? "text-white" : "text-gray-700"
+              } transition-colors duration-200`}
+              style={{
+                color: pathname === "/" ? "#8ABF37" : undefined,
+              }}
+              onMouseEnter={(e) => {
+                if (pathname !== "/") {
+                  e.currentTarget.style.color = "#8ABF37";
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (pathname !== "/") {
+                  e.currentTarget.style.color = "#6B7280"; // text-gray-700
+                }
+              }}
             >
               Location d&apos;espace
             </Link>
             <Link
               href="/domiciliation"
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
-                isActive("/domiciliation")
-                  ? "text-green-600"
-                  : "text-gray-700 hover:text-green-600"
-              }`}
+              className={`${
+                pathname === "/domiciliation" ? "text-white" : "text-gray-700"
+              } transition-colors duration-200`}
+              style={{
+                color: pathname === "/domiciliation" ? "#8ABF37" : undefined,
+              }}
+              onMouseEnter={(e) => {
+                if (pathname !== "/domiciliation") {
+                  e.currentTarget.style.color = "#8ABF37";
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (pathname !== "/domiciliation") {
+                  e.currentTarget.style.color = "#6B7280"; // text-gray-700
+                }
+              }}
             >
               Domiciliation
             </Link>
             <Link
               href="/open-cafe"
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
-                isActive("/open-cafe")
-                  ? "text-green-600"
-                  : "text-gray-700 hover:text-green-600"
-              }`}
+              className={`${
+                pathname === "/open-cafe" ? "text-white" : "text-gray-700"
+              } transition-colors duration-200`}
+              style={{
+                color: pathname === "/open-cafe" ? "#8ABF37" : undefined,
+              }}
+              onMouseEnter={(e) => {
+                if (pathname !== "/open-cafe") {
+                  e.currentTarget.style.color = "#8ABF37";
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (pathname !== "/open-cafe") {
+                  e.currentTarget.style.color = "#6B7280"; // text-gray-700
+                }
+              }}
             >
               L&apos;Open Café
             </Link>
             <Link
               href="/blog"
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
-                isActive("/blog")
-                  ? "text-green-600"
-                  : "text-gray-700 hover:text-green-600"
-              }`}
+              className={`${
+                pathname === "/blog" ? "text-white" : "text-gray-700"
+              } transition-colors duration-200`}
+              style={{
+                color: pathname === "/blog" ? "#8ABF37" : undefined,
+              }}
+              onMouseEnter={(e) => {
+                if (pathname !== "/blog") {
+                  e.currentTarget.style.color = "#8ABF37";
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (pathname !== "/blog") {
+                  e.currentTarget.style.color = "#6B7280"; // text-gray-700
+                }
+              }}
             >
               Blog
             </Link>
             <button
               onClick={scrollToContact}
-              className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+              className="flex items-center px-3 py-2 text-sm font-medium transition-colors"
+              style={{
+                color: "#6B7280", // text-gray-700 - same as inactive nav items
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "#8ABF37"; // hover to primary green
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "#6B7280"; // back to gray
+              }}
             >
               Contact
             </button>
           </nav>
 
-          {/* Desktop CTA Button */}
+          {/* CTA Button */}
           <div className="hidden md:block">
-            <Button
-              className="text-white px-6 py-2 hover:opacity-90 transition-all duration-200"
-              style={{ backgroundColor: "#8ABF37" }}
-            >
-              Réserver un espace
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleMobileMenu}
-              className="text-gray-700 hover:text-green-600"
-            >
-              <Menu className="h-6 w-6" />
-            </Button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Navigation Overlay */}
-      <div
-        className={`fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300 ${
-          isMobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
-        onClick={closeMobileMenu}
-      >
-        <div
-          className={`fixed top-0 right-0 h-full w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${
-            isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-          onClick={(e) => e.stopPropagation()}
-        >
-          {/* Mobile Menu Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <Link href="/" onClick={closeMobileMenu}>
-              <Image
-                src="/Logo-open-the-box.png"
-                alt="Open The Box"
-                width={100}
-                height={35}
-                className="h-7 w-auto"
-              />
-            </Link>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={closeMobileMenu}
-              className="text-gray-700 hover:text-green-600"
-            >
-              <X className="h-6 w-6" />
-            </Button>
-          </div>
-
-          {/* Mobile Navigation Links */}
-          <nav className="p-6">
-            <div className="space-y-4">
-              <Link
-                href="/"
-                className={`block py-3 text-lg font-medium transition-colors border-b border-gray-100 ${
-                  isActive("/")
-                    ? "text-green-600"
-                    : "text-gray-700 hover:text-green-600"
-                }`}
-                onClick={closeMobileMenu}
-              >
-                Location d&apos;espace
-              </Link>
-              <Link
-                href="/domiciliation"
-                className={`block py-3 text-lg font-medium transition-colors border-b border-gray-100 ${
-                  isActive("/domiciliation")
-                    ? "text-green-600"
-                    : "text-gray-700 hover:text-green-600"
-                }`}
-                onClick={closeMobileMenu}
-              >
-                Domiciliation
-              </Link>
-              <Link
-                href="/open-cafe"
-                className={`block py-3 text-lg font-medium transition-colors border-b border-gray-100 ${
-                  isActive("/open-cafe")
-                    ? "text-green-600"
-                    : "text-gray-700 hover:text-green-600"
-                }`}
-                onClick={closeMobileMenu}
-              >
-                L&apos;Open Café
-              </Link>
-              <Link
-                href="/blog"
-                className={`block py-3 text-lg font-medium transition-colors border-b border-gray-100 ${
-                  isActive("/blog")
-                    ? "text-green-600"
-                    : "text-gray-700 hover:text-green-600"
-                }`}
-                onClick={closeMobileMenu}
-              >
-                Blog
-              </Link>
-              <button
-                onClick={scrollToContact}
-                className="block text-gray-700 hover:text-green-600 py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left"
-              >
-                Contact
-              </button>
-            </div>
-
-            {/* Mobile CTA Button */}
-            <div className="mt-8">
+            <Link href="/">
               <Button
-                className="w-full text-white py-3 text-lg hover:opacity-90 transition-all duration-200"
+                className="text-white px-6 py-2 hover:opacity-90 transition-opacity"
                 style={{ backgroundColor: "#8ABF37" }}
-                onClick={closeMobileMenu}
               >
                 Réserver un espace
               </Button>
-            </div>
+            </Link>
+          </div>
 
-            {/* Contact Info */}
-            <div className="mt-8 pt-6 border-t border-gray-200">
-              <h4 className="text-sm font-semibold text-gray-900 mb-3">
-                Contact
-              </h4>
-              <div className="space-y-2 text-sm text-gray-600">
-                <p>+228 91 28 04 54</p>
-                <p>contact@openthebox.space</p>
-                <p>Lomé, Togo</p>
+          {/* Mobile Menu Button */}
+          <button
+            onClick={toggleMobileMenu}
+            className="md:hidden text-gray-700 hover:text-white"
+            style={{
+              color: "#8ABF37",
+            }}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {isMobileMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-50">
+              <div className="px-4 py-2 space-y-1">
+                <Link
+                  href="/"
+                  className={`${
+                    pathname === "/"
+                      ? "text-white"
+                      : "text-gray-700 hover:text-white"
+                  } block py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left`}
+                  style={{
+                    color: pathname === "/" ? "#8ABF37" : undefined,
+                  }}
+                  onClick={closeMobileMenu}
+                >
+                  Location d&apos;espace
+                </Link>
+                <Link
+                  href="/domiciliation"
+                  className={`${
+                    pathname === "/domiciliation"
+                      ? "text-white"
+                      : "text-gray-700 hover:text-white"
+                  } block py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left`}
+                  style={{
+                    color:
+                      pathname === "/domiciliation" ? "#8ABF37" : undefined,
+                  }}
+                  onClick={closeMobileMenu}
+                >
+                  Domiciliation
+                </Link>
+                <Link
+                  href="/open-cafe"
+                  className={`${
+                    pathname === "/open-cafe"
+                      ? "text-white"
+                      : "text-gray-700 hover:text-white"
+                  } block py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left`}
+                  style={{
+                    color: pathname === "/open-cafe" ? "#8ABF37" : undefined,
+                  }}
+                  onClick={closeMobileMenu}
+                >
+                  L&apos;Open Café
+                </Link>
+                <Link
+                  href="/blog"
+                  className={`${
+                    pathname === "/blog"
+                      ? "text-white"
+                      : "text-gray-700 hover:text-white"
+                  } block py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left`}
+                  style={{
+                    color: pathname === "/blog" ? "#8ABF37" : undefined,
+                  }}
+                  onClick={closeMobileMenu}
+                >
+                  Blog
+                </Link>
+                <button
+                  onClick={(e) => {
+                    scrollToContact(e);
+                    closeMobileMenu();
+                  }}
+                  className="block text-gray-700 hover:text-white py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left"
+                  style={{
+                    color: "#8ABF37",
+                  }}
+                >
+                  Contact
+                </button>
               </div>
             </div>
-          </nav>
+          )}
         </div>
       </div>
     </header>

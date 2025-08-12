@@ -1,13 +1,5 @@
 import { Button } from "@/components/ui/button";
-import {
-  Building2,
-  Mail,
-  FileText,
-  Users,
-  Clock,
-  Shield,
-  Check,
-} from "lucide-react";
+import { Check } from "lucide-react";
 
 const services = [
   "Hébergement du siège social et/ou adresse commerciale de votre société",

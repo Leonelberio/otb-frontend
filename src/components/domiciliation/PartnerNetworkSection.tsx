@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Handshake, Building2, CreditCard, Users, Target } from "lucide-react";
+import { Handshake, Building2, CreditCard, Target } from "lucide-react";
 
 export default function PartnerNetworkSection() {
   return (

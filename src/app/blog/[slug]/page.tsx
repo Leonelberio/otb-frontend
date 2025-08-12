@@ -216,7 +216,8 @@ export default async function BlogPostPage({ params }: PageProps) {
             {post.categories.map((category, index) => (
               <span
                 key={index}
-                className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full"
+                className="px-3 py-1 text-sm font-medium rounded-full"
+                style={{ backgroundColor: "#8ABF37", color: "white" }}
               >
                 {category}
               </span>

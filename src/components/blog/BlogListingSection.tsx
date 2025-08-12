@@ -245,7 +245,8 @@ export default function BlogListingSection() {
                     {post.categories.map((category: string, index: number) => (
                       <span
                         key={`${post.id}-${category}-${index}`}
-                        className="inline-block px-3 py-1 bg-green-500 text-white text-xs font-medium rounded-full mr-2"
+                        className="inline-block px-3 py-1 text-white text-xs font-medium rounded-full mr-2"
+                        style={{ backgroundColor: "#8ABF37" }}
                       >
                         {category}
                       </span>

@@ -315,7 +315,10 @@ export default function ContactFAQSection() {
               <div className="space-y-3">
                 <Button
                   variant="secondary"
-                  className="w-full bg-white text-green-600 hover:bg-gray-100"
+                  className="w-full bg-white hover:bg-gray-100"
+                  style={{
+                    color: "#8ABF37",
+                  }}
                   onClick={() => window.open("tel:+22891280454")}
                 >
                   <Phone className="w-4 h-4 mr-2" />
@@ -323,7 +326,10 @@ export default function ContactFAQSection() {
                 </Button>
                 <Button
                   variant="secondary"
-                  className="w-full bg-white text-green-600 hover:bg-gray-100"
+                  className="w-full bg-white hover:bg-gray-100"
+                  style={{
+                    color: "#8ABF37",
+                  }}
                   onClick={() => window.open("mailto:contact@openthebox.space")}
                 >
                   <Mail className="w-4 h-4 mr-2" />

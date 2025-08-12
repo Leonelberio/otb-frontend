@@ -333,6 +333,9 @@ export default function GoogleReviewsSection() {
                       ? "bg-green-500 scale-110"
                       : "bg-gray-300 hover:bg-gray-400"
                   }`}
+                  style={{
+                    backgroundColor: currentSlide === i ? "#8ABF37" : undefined,
+                  }}
                 />
               ))}
             </div>

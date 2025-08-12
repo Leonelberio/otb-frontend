@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Users, Monitor, Calendar, Coffee } from "lucide-react";
+import { Users, Monitor, Calendar } from "lucide-react";
 
 export default function AdaptedSpacesSection() {
   return (

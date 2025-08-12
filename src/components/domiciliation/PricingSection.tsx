@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 export default function PricingSection() {
@@ -67,7 +66,7 @@ export default function PricingSection() {
               </div>
             </div>
             <div className="mt-6 p-4 bg-green-50 rounded-lg">
-              <p className="text-sm text-green-800">
+              <p className="text-sm" style={{ color: "#8ABF37" }}>
                 <strong>Offre spéciale :</strong> -20% sur le premier mois pour
                 toute nouvelle inscription !
               </p>
