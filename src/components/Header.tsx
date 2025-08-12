@@ -29,12 +29,18 @@ export default function Header() {
   const scrollToContact = (e: React.MouseEvent) => {
     e.preventDefault();
     const contactSection = document.getElementById("contact");
+
     if (contactSection) {
+      // If contact section exists on current page, scroll to it
       contactSection.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
+    } else {
+      // If no contact section on current page, redirect to homepage contact section
+      window.location.href = "/#contact";
     }
+
     closeMobileMenu();
   };
 
