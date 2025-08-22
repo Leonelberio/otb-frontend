@@ -13,7 +13,7 @@ function H1({ children, className, ...props }: TypographyProps) {
   return (
     <h1
       className={cn(
-        "text-4xl md:text-5xl text-white mb-6 font-semibold leading-[44px] md:leading-[50px] tracking-[-2.1px]",
+        "text-4xl md:text-5xl text-white mb-6 font-semibold leading-[38px] md:leading-[44px] tracking-[-2.1px]",
         className
       )}
       {...props}
