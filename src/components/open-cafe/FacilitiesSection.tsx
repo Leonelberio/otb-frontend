@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Wifi, Coffee, Printer, Users } from "lucide-react";
 
@@ -7,12 +9,12 @@ export default function FacilitiesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 
+            <h2
               className="text-4xl md:text-5xl text-gray-900 mb-6"
               style={{
                 fontWeight: 600,
                 lineHeight: "40px",
-                letterSpacing: "-3px"
+                letterSpacing: "-3px",
               }}
             >
               Des équipements modernes et 100 % opérationnels
@@ -63,8 +65,19 @@ export default function FacilitiesSection() {
             </div>
 
             <Button
-              className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
-              style={{ backgroundColor: "#8BBE3D" }}
+              className="text-white px-8 py-4 text-lg transition-all duration-200"
+              style={{
+                backgroundColor: "#8BBE3D",
+                border: "2px solid #8BBE3D",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#000000";
+                e.currentTarget.style.borderColor = "#000000";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "#8BBE3D";
+                e.currentTarget.style.borderColor = "#8BBE3D";
+              }}
             >
               Profiter de l&apos;offre
             </Button>

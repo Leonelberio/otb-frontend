@@ -40,14 +40,17 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header
+      className="sticky top-0 z-50"
+      style={{ backgroundColor: "#1f1f1f" }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                src="/Logo-open-the-box.png"
+                src="/Logo-open-the-box-blanc.png"
                 alt="Open The Box"
                 width={120}
                 height={40}
@@ -61,10 +64,10 @@ export default function Header() {
             <Link
               href="/"
               className={`${
-                pathname === "/" ? "text-white" : "text-gray-700"
+                pathname === "/" ? "text-white" : "text-white"
               } transition-colors duration-200`}
               style={{
-                color: pathname === "/" ? "#8BBE3D" : undefined,
+                color: pathname === "/" ? "#8BBE3D" : "#ffffff",
               }}
               onMouseEnter={(e) => {
                 if (pathname !== "/") {
@@ -73,7 +76,7 @@ export default function Header() {
               }}
               onMouseLeave={(e) => {
                 if (pathname !== "/") {
-                  e.currentTarget.style.color = "#6B7280"; // text-gray-700
+                  e.currentTarget.style.color = "#ffffff"; // white text
                 }
               }}
             >
@@ -82,10 +85,10 @@ export default function Header() {
             <Link
               href="/domiciliation"
               className={`${
-                pathname === "/domiciliation" ? "text-white" : "text-gray-700"
+                pathname === "/domiciliation" ? "text-white" : "text-white"
               } transition-colors duration-200`}
               style={{
-                color: pathname === "/domiciliation" ? "#8BBE3D" : undefined,
+                color: pathname === "/domiciliation" ? "#8BBE3D" : "#ffffff",
               }}
               onMouseEnter={(e) => {
                 if (pathname !== "/domiciliation") {
@@ -94,7 +97,7 @@ export default function Header() {
               }}
               onMouseLeave={(e) => {
                 if (pathname !== "/domiciliation") {
-                  e.currentTarget.style.color = "#6B7280"; // text-gray-700
+                  e.currentTarget.style.color = "#ffffff"; // white text
                 }
               }}
             >
@@ -103,10 +106,10 @@ export default function Header() {
             <Link
               href="/open-cafe"
               className={`${
-                pathname === "/open-cafe" ? "text-white" : "text-gray-700"
+                pathname === "/open-cafe" ? "text-white" : "text-white"
               } transition-colors duration-200`}
               style={{
-                color: pathname === "/open-cafe" ? "#8BBE3D" : undefined,
+                color: pathname === "/open-cafe" ? "#8BBE3D" : "#ffffff",
               }}
               onMouseEnter={(e) => {
                 if (pathname !== "/open-cafe") {
@@ -115,7 +118,7 @@ export default function Header() {
               }}
               onMouseLeave={(e) => {
                 if (pathname !== "/open-cafe") {
-                  e.currentTarget.style.color = "#6B7280"; // text-gray-700
+                  e.currentTarget.style.color = "#ffffff"; // white text
                 }
               }}
             >
@@ -124,10 +127,10 @@ export default function Header() {
             <Link
               href="/blog"
               className={`${
-                pathname === "/blog" ? "text-white" : "text-gray-700"
+                pathname === "/blog" ? "text-white" : "text-white"
               } transition-colors duration-200`}
               style={{
-                color: pathname === "/blog" ? "#8BBE3D" : undefined,
+                color: pathname === "/blog" ? "#8BBE3D" : "#ffffff",
               }}
               onMouseEnter={(e) => {
                 if (pathname !== "/blog") {
@@ -136,7 +139,7 @@ export default function Header() {
               }}
               onMouseLeave={(e) => {
                 if (pathname !== "/blog") {
-                  e.currentTarget.style.color = "#6B7280"; // text-gray-700
+                  e.currentTarget.style.color = "#ffffff"; // white text
                 }
               }}
             >
@@ -146,13 +149,13 @@ export default function Header() {
               onClick={scrollToContact}
               className="flex items-center px-3 py-2 text-sm font-medium transition-colors"
               style={{
-                color: "#6B7280", // text-gray-700 - same as inactive nav items
+                color: "#ffffff", // white text for dark background
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.color = "#8BBE3D"; // hover to primary green
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.color = "#6B7280"; // back to gray
+                e.currentTarget.style.color = "#ffffff"; // back to white
               }}
             >
               Contact
@@ -163,8 +166,19 @@ export default function Header() {
           <div className="hidden md:block">
             <Link href="/">
               <Button
-                className="text-white hover:opacity-90 transition-opacity"
-                style={{ backgroundColor: "#8BBE3D" }}
+                className="text-white transition-all duration-200"
+                style={{
+                  backgroundColor: "#8BBE3D",
+                  border: "2px solid #8BBE3D",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.borderColor = "#ffffff";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "#8BBE3D";
+                  e.currentTarget.style.borderColor = "#8BBE3D";
+                }}
               >
                 Réserver un espace
               </Button>
@@ -174,9 +188,9 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMobileMenu}
-            className="md:hidden text-gray-700 hover:text-white"
+            className="md:hidden text-white hover:text-green-400"
             style={{
-              color: "#8BBE3D",
+              color: "#ffffff",
             }}
           >
             <svg
@@ -205,17 +219,20 @@ export default function Header() {
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-50">
+            <div
+              className="md:hidden absolute top-full left-0 right-0 shadow-lg border-t border-gray-600 z-50"
+              style={{ backgroundColor: "#1f1f1f" }}
+            >
               <div className="px-4 py-2 space-y-1">
                 <Link
                   href="/"
                   className={`${
                     pathname === "/"
                       ? "text-white"
-                      : "text-gray-700 hover:text-white"
-                  } block py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left`}
+                      : "text-white hover:text-green-400"
+                  } block py-3 text-lg font-medium transition-colors border-b border-gray-600 w-full text-left`}
                   style={{
-                    color: pathname === "/" ? "#8BBE3D" : undefined,
+                    color: pathname === "/" ? "#8BBE3D" : "#ffffff",
                   }}
                   onClick={closeMobileMenu}
                 >
@@ -226,11 +243,11 @@ export default function Header() {
                   className={`${
                     pathname === "/domiciliation"
                       ? "text-white"
-                      : "text-gray-700 hover:text-white"
-                  } block py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left`}
+                      : "text-white hover:text-green-400"
+                  } block py-3 text-lg font-medium transition-colors border-b border-gray-600 w-full text-left`}
                   style={{
                     color:
-                      pathname === "/domiciliation" ? "#8BBE3D" : undefined,
+                      pathname === "/domiciliation" ? "#8BBE3D" : "#ffffff",
                   }}
                   onClick={closeMobileMenu}
                 >
@@ -241,10 +258,10 @@ export default function Header() {
                   className={`${
                     pathname === "/open-cafe"
                       ? "text-white"
-                      : "text-gray-700 hover:text-white"
-                  } block py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left`}
+                      : "text-white hover:text-green-400"
+                  } block py-3 text-lg font-medium transition-colors border-b border-gray-600 w-full text-left`}
                   style={{
-                    color: pathname === "/open-cafe" ? "#8BBE3D" : undefined,
+                    color: pathname === "/open-cafe" ? "#8BBE3D" : "#ffffff",
                   }}
                   onClick={closeMobileMenu}
                 >
@@ -255,10 +272,10 @@ export default function Header() {
                   className={`${
                     pathname === "/blog"
                       ? "text-white"
-                      : "text-gray-700 hover:text-white"
-                  } block py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left`}
+                      : "text-white hover:text-green-400"
+                  } block py-3 text-lg font-medium transition-colors border-b border-gray-600 w-full text-left`}
                   style={{
-                    color: pathname === "/blog" ? "#8BBE3D" : undefined,
+                    color: pathname === "/blog" ? "#8BBE3D" : "#ffffff",
                   }}
                   onClick={closeMobileMenu}
                 >
@@ -269,9 +286,9 @@ export default function Header() {
                     scrollToContact(e);
                     closeMobileMenu();
                   }}
-                  className="block text-gray-700 hover:text-white py-3 text-lg font-medium transition-colors border-b border-gray-100 w-full text-left"
+                  className="block text-white hover:text-green-400 py-3 text-lg font-medium transition-colors border-b border-gray-600 w-full text-left"
                   style={{
-                    color: "#8BBE3D",
+                    color: "#ffffff",
                   }}
                 >
                   Contact

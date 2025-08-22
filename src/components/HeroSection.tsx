@@ -12,8 +12,7 @@ const heroSlides = [
     subtitle:
       "Bureaux, salles de conférence ou espaces de réception à louer facilement à Lomé.",
     cta: "Réserver un espace",
-    backgroundImage: "/reunion-d-affaires.jpg",
-    backgroundColor: "#000000",
+    image: "/reunion-d-affaires.jpg",
   },
   {
     id: 2,
@@ -21,8 +20,7 @@ const heroSlides = [
     subtitle:
       "Concentrez-vous sur votre réunion, Open The Box s'occupe du reste. Chaque espace est prêt à l'emploi.",
     cta: "Découvrir nos espaces",
-    backgroundImage: "/reunion-d-affaires.jpg",
-    backgroundColor: "#000000",
+    image: "/reunion-d-affaires.jpg",
   },
   {
     id: 3,
@@ -30,8 +28,7 @@ const heroSlides = [
     subtitle:
       "Open The Box vous accueille tous les jours, y compris le week-end, sur simple demande.",
     cta: "Prendre rendez-vous",
-    backgroundImage: "/reunion-d-affaires.jpg",
-    backgroundColor: "#000000",
+    image: "/reunion-d-affaires.jpg",
   },
 ];
 
@@ -77,43 +74,88 @@ export default function HeroSection() {
           key={slide.id}
           className={`absolute inset-0 transition-transform duration-700 ease-in-out`}
           style={{
-            backgroundColor: slide.backgroundColor,
+            backgroundColor: "#1f1f1f",
             transform: `translateX(${(index - currentSlide) * 100}%)`,
           }}
         >
-          {/* Background Image - Full width on all devices */}
-          <div className="absolute inset-0 h-full opacity-20">
-            <div
-              className="w-full h-full bg-white/10"
-              style={{
-                backgroundImage: `url('${slide.backgroundImage}')`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            ></div>
-          </div>
           <div className="relative z-10 w-full h-full flex items-center">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-              <div className="max-w-3xl">
-                <h1
-                  className="text-4xl md:text-6xl text-white mb-6"
-                  style={{
-                    fontWeight: 600,
-                    lineHeight: "62px",
-                    letterSpacing: "-3.1px",
-                  }}
-                >
-                  {slide.title}
-                </h1>
-                <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-                  {slide.subtitle}
-                </p>
-                <Button
-                  className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
-                  style={{ backgroundColor: "#8BBE3D" }}
-                >
-                  {slide.cta}
-                </Button>
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                {/* Left Content */}
+                <div className="max-w-2xl">
+                  <h1
+                    className="text-4xl md:text-6xl text-white mb-6"
+                    style={{
+                      fontWeight: 600,
+                      lineHeight: "62px",
+                      letterSpacing: "-3.1px",
+                    }}
+                  >
+                    {slide.id === 1 && (
+                      <>
+                        Open The <span style={{ color: "#8ABF37" }}>Box</span> –
+                        Le N°1 de la location d&apos;espaces professionnels au
+                        Togo
+                      </>
+                    )}
+                    {slide.id === 2 && (
+                      <>
+                        Des espaces{" "}
+                        <span style={{ color: "#8ABF37" }}>équipés</span> et
+                        100% opérationnels
+                      </>
+                    )}
+                    {slide.id === 3 && (
+                      <>
+                        Visite{" "}
+                        <span style={{ color: "#8ABF37" }}>gratuite</span>, sur
+                        rendez-vous 7j/7
+                      </>
+                    )}
+                  </h1>
+                  <p
+                    className="text-xl md:text-2xl text-white/90 mb-8"
+                    style={{
+                      lineHeight: "30px",
+                      letterSpacing: "-1px",
+                    }}
+                  >
+                    {slide.subtitle}
+                  </p>
+                  <Button
+                    className="text-white transition-all duration-200"
+                    style={{
+                      backgroundColor: "#8BBE3D",
+                      fontSize: "16px",
+                      padding: "16px 32px",
+                      border: "2px solid #8BBE3D",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = "transparent";
+                      e.currentTarget.style.borderColor = "#ffffff";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = "#8BBE3D";
+                      e.currentTarget.style.borderColor = "#8BBE3D";
+                    }}
+                  >
+                    {slide.cta}
+                  </Button>
+                </div>
+
+                {/* Right Side - Image */}
+                <div className="hidden md:block">
+                  <div className="relative h-96 w-full">
+                    <div
+                      className="w-full h-full rounded-lg overflow-hidden"
+                      style={{
+                        backgroundImage: `url('${slide.image}')`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

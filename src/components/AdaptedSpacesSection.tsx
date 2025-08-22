@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Building2, MessageCircle, Briefcase } from "lucide-react";
 
@@ -89,11 +91,20 @@ export default function AdaptedSpacesSection() {
             </div>
 
             <Button
-              className="text-white hover:opacity-90"
-              style={{ 
+              className="text-white transition-all duration-200"
+              style={{
                 backgroundColor: "#8BBE3D",
                 fontSize: "16px",
-                padding: "16px 32px"
+                padding: "16px 32px",
+                border: "2px solid #8BBE3D",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#000000";
+                e.currentTarget.style.borderColor = "#000000";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "#8BBE3D";
+                e.currentTarget.style.borderColor = "#8BBE3D";
               }}
             >
               Réserver un espace

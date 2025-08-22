@@ -11,8 +11,7 @@ const heroSlides = [
     subtitle:
       "Un espace de coworking moderne et convivial où entrepreneurs, freelances et équipes peuvent travailler, collaborer et réseauter dans un environnement stimulant.",
     cta: "Profiter de l'offre",
-    backgroundImage: "/reunion-d-affaires.jpg",
-    backgroundColor: "#000000",
+    image: "/reunion-d-affaires.jpg",
   },
   {
     id: 2,
@@ -20,8 +19,7 @@ const heroSlides = [
     subtitle:
       "Bureaux privés, espaces de coworking, salles de réunion et zones de détente pour répondre à tous vos besoins professionnels.",
     cta: "Découvrir nos espaces",
-    backgroundImage: "/reunion-d-affaires.jpg",
-    backgroundColor: "#000000",
+    image: "/reunion-d-affaires.jpg",
   },
   {
     id: 3,
@@ -29,8 +27,7 @@ const heroSlides = [
     subtitle:
       "Connectez-vous avec d'autres professionnels, participez à des événements networking et développez votre réseau business.",
     cta: "Rejoindre la communauté",
-    backgroundImage: "/reunion-d-affaires.jpg",
-    backgroundColor: "#000000",
+    image: "/reunion-d-affaires.jpg",
   },
 ];
 
@@ -76,36 +73,87 @@ export default function HeroSection() {
           key={slide.id}
           className={`absolute inset-0 transition-transform duration-700 ease-in-out`}
           style={{
-            backgroundColor: slide.backgroundColor,
+            backgroundColor: "#1f1f1f",
             transform: `translateX(${(index - currentSlide) * 100}%)`,
           }}
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
-            style={{ backgroundImage: `url('${slide.backgroundImage}')` }}
-          ></div>
           <div className="relative z-10 w-full h-full flex items-center">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-              <div className="max-w-3xl">
-                <h1
-                  className="text-4xl md:text-6xl text-white mb-6"
-                  style={{
-                    fontWeight: 600,
-                    lineHeight: "62px",
-                    letterSpacing: "-3.1px",
-                  }}
-                >
-                  {slide.title}
-                </h1>
-                <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-                  {slide.subtitle}
-                </p>
-                <Button
-                  className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
-                  style={{ backgroundColor: "#8BBE3D" }}
-                >
-                  {slide.cta}
-                </Button>
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                {/* Left Content */}
+                <div className="max-w-2xl">
+                  <h1
+                    className="text-4xl md:text-6xl text-white mb-6"
+                    style={{
+                      fontWeight: 600,
+                      lineHeight: "62px",
+                      letterSpacing: "-3.1px",
+                    }}
+                  >
+                    {slide.id === 1 && (
+                      <>
+                        Le cadre <span style={{ color: "#8ABF37" }}>idéal</span>{" "}
+                        pour entreprendre et développer un business
+                      </>
+                    )}
+                    {slide.id === 2 && (
+                      <>
+                        Un espace de travail{" "}
+                        <span style={{ color: "#8ABF37" }}>flexible</span> et
+                        moderne
+                      </>
+                    )}
+                    {slide.id === 3 && (
+                      <>
+                        Rejoignez une{" "}
+                        <span style={{ color: "#8ABF37" }}>communauté</span>{" "}
+                        d&apos;entrepreneurs
+                      </>
+                    )}
+                  </h1>
+                  <p
+                    className="text-xl md:text-2xl text-white/90 mb-8"
+                    style={{
+                      lineHeight: "30px",
+                      letterSpacing: "-1px",
+                    }}
+                  >
+                    {slide.subtitle}
+                  </p>
+                  <Button
+                    className="text-white transition-all duration-200"
+                    style={{
+                      backgroundColor: "#8BBE3D",
+                      fontSize: "16px",
+                      padding: "16px 32px",
+                      border: "2px solid #8BBE3D",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = "transparent";
+                      e.currentTarget.style.borderColor = "#ffffff";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = "#8BBE3D";
+                      e.currentTarget.style.borderColor = "#8BBE3D";
+                    }}
+                  >
+                    {slide.cta}
+                  </Button>
+                </div>
+
+                {/* Right Side - Image */}
+                <div className="hidden md:block">
+                  <div className="relative h-96 w-full">
+                    <div
+                      className="w-full h-full rounded-lg overflow-hidden"
+                      style={{
+                        backgroundImage: `url('${slide.image}')`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
