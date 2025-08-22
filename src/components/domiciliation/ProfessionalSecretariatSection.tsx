@@ -7,12 +7,12 @@ export default function ProfessionalSecretariatSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 
-              className="text-4xl md:text-5xl text-gray-900 mb-6"
+            <h2
+              className="text-3xl md:text-5xl text-gray-900 mb-6"
               style={{
                 fontWeight: 600,
                 lineHeight: "40px",
-                letterSpacing: "-3px"
+                letterSpacing: "-3px",
               }}
             >
               Secrétariat professionnel inclus dans votre domiciliation

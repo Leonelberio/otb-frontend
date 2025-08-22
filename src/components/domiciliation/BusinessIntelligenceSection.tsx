@@ -14,12 +14,12 @@ export default function BusinessIntelligenceSection() {
           </div>
 
           <div>
-            <h2 
-              className="text-4xl md:text-5xl text-gray-900 mb-6"
+            <h2
+              className="text-3xl md:text-5xl text-gray-900 mb-6"
               style={{
                 fontWeight: 600,
                 lineHeight: "40px",
-                letterSpacing: "-3px"
+                letterSpacing: "-3px",
               }}
             >
               Veille et newsletter sur le business au Togo

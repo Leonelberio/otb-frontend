@@ -99,21 +99,28 @@ export default function RelatedPostsSection({
         <div className="text-center mb-12">
           <h2
             className="text-3xl md:text-4xl text-gray-900 mb-4"
-            style={{
-              fontWeight: 600,
-              lineHeight: "40px",
-              letterSpacing: "-3px",
-            }}
+            style={
+              {
+                fontWeight: 600,
+                lineHeight: "26px",
+                letterSpacing: "-1.6px",
+                "@media (min-width: 768px)": {
+                  lineHeight: "40px",
+                },
+              } as React.CSSProperties
+            }
           >
             {relatedPosts.length > 0
               ? "Articles similaires"
               : "Articles récents"}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto"
-              style={{
-                lineHeight: "30px",
-                letterSpacing: "-1px",
-              }}>
+          <p
+            className="text-lg text-gray-600 max-w-2xl mx-auto"
+            style={{
+              lineHeight: "30px",
+              letterSpacing: "-1px",
+            }}
+          >
             {relatedPosts.length > 0
               ? "Découvrez d'autres articles sur des sujets similaires"
               : "Découvrez nos derniers articles"}

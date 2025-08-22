@@ -28,21 +28,28 @@ export default function ProcessSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 
-              className="text-4xl md:text-5xl text-gray-900 mb-6"
-              style={{
+          <h2
+            className="text-3xl md:text-5xl text-gray-900 mb-6"
+            style={
+              {
                 fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-3px"
-              }}
-            >
+                lineHeight: "26px",
+                letterSpacing: "-1.6px",
+                "@media (min-width: 768px)": {
+                  lineHeight: "40px",
+                },
+              } as React.CSSProperties
+            }
+          >
             Comment ça marche ?
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto"
-              style={{
-                lineHeight: "30px",
-                letterSpacing: "-1px",
-              }}>
+          <p
+            className="text-lg text-gray-600 max-w-3xl mx-auto"
+            style={{
+              lineHeight: "30px",
+              letterSpacing: "-1px",
+            }}
+          >
             En 4 étapes simples, obtenez votre adresse professionnelle et
             démarrez votre activité.
           </p>

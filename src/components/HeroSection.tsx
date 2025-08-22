@@ -85,11 +85,16 @@ export default function HeroSection() {
                 <div className="max-w-2xl">
                   <h1
                     className="text-4xl md:text-6xl text-white mb-6"
-                    style={{
-                      fontWeight: 600,
-                      lineHeight: "62px",
-                      letterSpacing: "-3.1px",
-                    }}
+                    style={
+                      {
+                        fontWeight: 600,
+                        lineHeight: "36px",
+                        letterSpacing: "-3.1px",
+                        "@media (min-width: 768px)": {
+                          lineHeight: "62px",
+                        },
+                      } as React.CSSProperties
+                    }
                   >
                     {slide.id === 1 && (
                       <>

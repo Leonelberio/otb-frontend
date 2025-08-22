@@ -11,12 +11,17 @@ export default function AdaptedSpacesSection() {
           {/* Left Content */}
           <div>
             <h2
-              className="text-4xl md:text-5xl text-gray-900 mb-6"
-              style={{
-                fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-3px",
-              }}
+              className="text-3xl md:text-5xl text-gray-900 mb-6"
+              style={
+                {
+                  fontWeight: 600,
+                  lineHeight: "26px",
+                  letterSpacing: "-1.6px",
+                  "@media (min-width: 768px)": {
+                    lineHeight: "40px",
+                  },
+                } as React.CSSProperties
+              }
             >
               Des espaces adaptés à chaque usage
             </h2>

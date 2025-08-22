@@ -16,14 +16,14 @@ export default function QuoteSection() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 
-              className="text-4xl md:text-5xl text-gray-900 mb-6"
-              style={{
-                fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-3px"
-              }}
-            >
+        <h2
+          className="text-3xl md:text-5xl text-gray-900 mb-6"
+          style={{
+            fontWeight: 600,
+            lineHeight: "40px",
+            letterSpacing: "-3px",
+          }}
+        >
           Obtenir un devis pour un espace de coworking
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">

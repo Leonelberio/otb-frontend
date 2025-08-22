@@ -9,11 +9,11 @@ export default function PricingSection() {
           {/* Left Content */}
           <div>
             <h2
-              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              className="text-3xl md:text-5xl text-gray-900 mb-6"
               style={{
                 fontWeight: 600,
                 lineHeight: "40px",
-                letterSpacing: "-3px",
+                letterSpacing: "-1.6px",
               }}
             >
               Des tarifs accessibles et flexibles

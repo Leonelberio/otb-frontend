@@ -60,14 +60,19 @@ export default function GoogleReviewsSection() {
               className="h-8 w-auto"
             />
           </div>
-          <h2 
-              className="text-4xl md:text-5xl text-gray-900 mb-6"
-              style={{
+          <h2
+            className="text-3xl md:text-5xl text-gray-900 mb-6"
+            style={
+              {
                 fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-3px"
-              }}
-            >
+                lineHeight: "26px",
+                letterSpacing: "-1.6px",
+                "@media (min-width: 768px)": {
+                  lineHeight: "40px",
+                },
+              } as React.CSSProperties
+            }
+          >
             Ce que les coworkers pensent de l&apos;Open Café
           </h2>
           <div className="flex items-center justify-center space-x-2 mb-4">

@@ -7,12 +7,17 @@ export default function ProblemSolutionSection() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2
-          className="text-4xl md:text-5xl text-gray-900 mb-6"
-          style={{
-            fontWeight: 600,
-            lineHeight: "40px",
-            letterSpacing: "-3px",
-          }}
+          className="text-3xl md:text-5xl text-gray-900 mb-6"
+          style={
+            {
+              fontWeight: 600,
+              lineHeight: "26px",
+              letterSpacing: "-1.6px",
+              "@media (min-width: 768px)": {
+                lineHeight: "40px",
+              },
+            } as React.CSSProperties
+          }
         >
           Arrêter de souffrir pour trouver un espace !
         </h2>

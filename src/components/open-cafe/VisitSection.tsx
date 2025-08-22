@@ -10,11 +10,11 @@ export default function VisitSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2
-              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              className="text-3xl md:text-5xl text-gray-900 mb-6"
               style={{
                 fontWeight: 600,
                 lineHeight: "40px",
-                letterSpacing: "-3px",
+                letterSpacing: "-1.6px",
               }}
             >
               Visite gratuite, sur rendez-vous 7j/7
