@@ -76,12 +76,12 @@ export default function TypographyTestPage() {
             <h3 className="text-lg font-semibold mb-2">H2 Specifications:</h3>
             <ul className="text-sm text-gray-600 space-y-1">
               <li>
-                <strong>Mobile:</strong> text-3xl (30px), lineHeight: "26px",
-                letterSpacing: "-1.6px"
+                <strong>Mobile:</strong> text-3xl (30px), lineHeight:
+                &quot;26px&quot;, letterSpacing: &quot;-1.6px&quot;
               </li>
               <li>
-                <strong>Desktop:</strong> text-5xl (48px), lineHeight: "40px",
-                letterSpacing: "-1.6px"
+                <strong>Desktop:</strong> text-5xl (48px), lineHeight:
+                &quot;40px&quot;, letterSpacing: &quot;-1.6px&quot;
               </li>
               <li>
                 <strong>Color:</strong> text-gray-900, fontWeight: 600
