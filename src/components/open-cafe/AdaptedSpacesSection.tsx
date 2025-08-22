@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Users, Monitor, Calendar } from "lucide-react";
+import { H2 } from "../ui/typography";
 
 export default function AdaptedSpacesSection() {
   return (
@@ -14,16 +15,7 @@ export default function AdaptedSpacesSection() {
           </div>
 
           <div>
-            <h2
-              className="text-3xl md:text-5xl text-gray-900 mb-6"
-              style={{
-                fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-3px",
-              }}
-            >
-              Des espaces adaptés à chaque style de travail
-            </h2>
+            <H2>Des espaces adaptés à chaque style de travail</H2>
             <p className="text-lg text-gray-600 mb-8">
               Que vous soyez entrepreneur solo, équipe en croissance ou
               freelance, nous avons l&apos;espace qu&apos;il vous faut pour

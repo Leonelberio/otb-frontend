@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, Printer, Package } from "lucide-react";
+import { H2 } from "../ui/typography";
 
 export default function ProfessionalSecretariatSection() {
   return (
@@ -7,16 +8,7 @@ export default function ProfessionalSecretariatSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2
-              className="text-3xl md:text-5xl text-gray-900 mb-6"
-              style={{
-                fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-3px",
-              }}
-            >
-              Secrétariat professionnel inclus dans votre domiciliation
-            </h2>
+            <H2>Secrétariat professionnel inclus dans votre domiciliation</H2>
             <p className="text-lg text-gray-600 mb-8">
               En plus d&apos;une adresse professionnelle, bénéficiez de services
               pratiques pour la gestion quotidienne de votre entreprise.

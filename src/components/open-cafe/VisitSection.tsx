@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, MapPin, Users } from "lucide-react";
+import { H2 } from "../ui/typography";
 
 export default function VisitSection() {
   return (
@@ -9,16 +10,7 @@ export default function VisitSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2
-              className="text-3xl md:text-5xl text-gray-900 mb-6"
-              style={{
-                fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-1.6px",
-              }}
-            >
-              Visite gratuite, sur rendez-vous 7j/7
-            </h2>
+            <H2>Visite gratuite, sur rendez-vous 7j/7</H2>
             <p className="text-lg text-gray-600 mb-8">
               Découvrez notre espace de coworking et rencontrez notre
               communauté. Nous vous accueillons tous les jours pour une visite

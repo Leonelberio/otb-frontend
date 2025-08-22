@@ -1,4 +1,5 @@
 import { Newspaper, Briefcase, Building2 } from "lucide-react";
+import { H1, P } from "../ui/typography";
 
 export default function BlogHeroSection() {
   return (
@@ -10,13 +11,11 @@ export default function BlogHeroSection() {
       <div className="relative z-10 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Blog Open The Box
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+            <H1>Blog Open The Box</H1>
+            <P className="text-white/90 mb-8">
               Actualités, conseils et tendances sur les espaces professionnels
               au Togo
-            </p>
+            </P>
             <div className="flex items-center justify-center space-x-4 text-white/80">
               <span className="flex items-center space-x-2">
                 <Newspaper className="w-5 h-5" />

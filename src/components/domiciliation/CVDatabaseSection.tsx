@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Users, GraduationCap, Briefcase, RefreshCw } from "lucide-react";
+import { H2 } from "../ui/typography";
 
 export default function CVDatabaseSection() {
   return (
@@ -14,16 +15,7 @@ export default function CVDatabaseSection() {
           </div>
 
           <div>
-            <h2
-              className="text-3xl md:text-5xl text-gray-900 mb-6"
-              style={{
-                fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-3px",
-              }}
-            >
-              CVthèque pour vous aider à recruter au Togo
-            </h2>
+            <H2>CVthèque pour vous aider à recruter au Togo</H2>
             <p className="text-lg text-gray-600 mb-8">
               En domiciliant votre entreprise chez Open The Box, accédez à notre
               base de données de profils qualifiés : stagiaires, juniors ou

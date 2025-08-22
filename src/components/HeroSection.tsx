@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { H1, P } from "@/components/ui/typography";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const heroSlides = [
@@ -83,19 +84,7 @@ export default function HeroSection() {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 {/* Left Content */}
                 <div className="max-w-2xl">
-                  <h1
-                    className="text-4xl md:text-6xl text-white mb-6"
-                    style={
-                      {
-                        fontWeight: 600,
-                        lineHeight: "36px",
-                        letterSpacing: "-3.1px",
-                        "@media (min-width: 768px)": {
-                          lineHeight: "62px",
-                        },
-                      } as React.CSSProperties
-                    }
-                  >
+                  <H1>
                     {slide.id === 1 && (
                       <>
                         Open The <span style={{ color: "#8ABF37" }}>Box</span> –
@@ -117,16 +106,10 @@ export default function HeroSection() {
                         rendez-vous 7j/7
                       </>
                     )}
-                  </h1>
-                  <p
-                    className="text-xl md:text-2xl text-white/90 mb-8"
-                    style={{
-                      lineHeight: "30px",
-                      letterSpacing: "-1px",
-                    }}
-                  >
+                  </H1>
+                  <P className="text-xl md:text-2xl text-white/90 mb-8">
                     {slide.subtitle}
-                  </p>
+                  </P>
                   <Button
                     className="text-white transition-all duration-200"
                     style={{

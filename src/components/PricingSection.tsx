@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Clock, Users, Package } from "lucide-react";
+import { H2 } from "./ui/typography";
 
 export default function PricingSection() {
   return (
@@ -8,16 +9,7 @@ export default function PricingSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2
-              className="text-3xl md:text-5xl text-gray-900 mb-6"
-              style={{
-                fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-1.6px",
-              }}
-            >
-              Des tarifs accessibles et flexibles
-            </h2>
+            <H2>Des tarifs accessibles et flexibles</H2>
 
             <p
               className="text-lg text-gray-600 mb-8"

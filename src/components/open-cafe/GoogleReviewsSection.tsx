@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import Image from "next/image";
+import { H2 } from "../ui/typography";
 
 const reviews = [
   {
@@ -60,21 +61,7 @@ export default function GoogleReviewsSection() {
               className="h-8 w-auto"
             />
           </div>
-          <h2
-            className="text-3xl md:text-5xl text-gray-900 mb-6"
-            style={
-              {
-                fontWeight: 600,
-                lineHeight: "26px",
-                letterSpacing: "-1.6px",
-                "@media (min-width: 768px)": {
-                  lineHeight: "40px",
-                },
-              } as React.CSSProperties
-            }
-          >
-            Ce que les coworkers pensent de l&apos;Open Café
-          </h2>
+          <H2>Ce que les coworkers pensent de l&apos;Open Café</H2>
           <div className="flex items-center justify-center space-x-2 mb-4">
             {[...Array(5)].map((_, i) => (
               <Star

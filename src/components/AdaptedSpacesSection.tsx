@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { H2, P } from "@/components/ui/typography";
 import { Building2, MessageCircle, Briefcase } from "lucide-react";
 
 export default function AdaptedSpacesSection() {
@@ -10,33 +11,13 @@ export default function AdaptedSpacesSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2
-              className="text-3xl md:text-5xl text-gray-900 mb-6"
-              style={
-                {
-                  fontWeight: 600,
-                  lineHeight: "26px",
-                  letterSpacing: "-1.6px",
-                  "@media (min-width: 768px)": {
-                    lineHeight: "40px",
-                  },
-                } as React.CSSProperties
-              }
-            >
-              Des espaces adaptés à chaque usage
-            </h2>
+            <H2>Des espaces adaptés à chaque usage</H2>
 
-            <p
-              className="text-lg text-gray-600 mb-8"
-              style={{
-                lineHeight: "30px",
-                letterSpacing: "-1px",
-              }}
-            >
+            <P className="mb-8">
               Besoin d&apos;un bureau privé ou d&apos;une salle pour vos
               événements ? Open The Box (OTB) vous aide à trouver l&apos;espace
               parfait, selon votre activité, vos horaires et votre budget.
-            </p>
+            </P>
 
             {/* Features List */}
             <div className="space-y-4 mb-10">

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { H2, P } from "@/components/ui/typography";
 import {
   Select,
   SelectContent,
@@ -96,31 +97,11 @@ export default function ContactFAQSection() {
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2
-            className="text-3xl md:text-5xl text-gray-900 mb-6"
-            style={
-              {
-                fontWeight: 600,
-                lineHeight: "26px",
-                letterSpacing: "-1.6px",
-                "@media (min-width: 768px)": {
-                  lineHeight: "40px",
-                },
-              } as React.CSSProperties
-            }
-          >
-            Contact & FAQ
-          </h2>
-          <p
-            className="text-lg text-gray-600 max-w-3xl mx-auto"
-            style={{
-              lineHeight: "30px",
-              letterSpacing: "-1px",
-            }}
-          >
+          <H2>Contact & FAQ</H2>
+          <P className="max-w-3xl mx-auto">
             Une question ? Un projet ? Contactez-nous directement ou consultez
             nos réponses aux questions fréquentes.
-          </p>
+          </P>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Newspaper, TrendingUp, Calendar, FileText } from "lucide-react";
+import { H2 } from "../ui/typography";
 
 export default function BusinessIntelligenceSection() {
   return (
@@ -14,16 +15,7 @@ export default function BusinessIntelligenceSection() {
           </div>
 
           <div>
-            <h2
-              className="text-3xl md:text-5xl text-gray-900 mb-6"
-              style={{
-                fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-3px",
-              }}
-            >
-              Veille et newsletter sur le business au Togo
-            </h2>
+            <H2>Veille et newsletter sur le business au Togo</H2>
             <p className="text-lg text-gray-600 mb-8">
               Grâce à la domiciliation, recevez nos newsletters pour rester
               informé des évolutions du business au Togo.

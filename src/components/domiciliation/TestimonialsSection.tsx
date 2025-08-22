@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { H2 } from "../ui/typography";
 
 const testimonials = [
   {
@@ -23,21 +24,7 @@ export default function TestimonialsSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2
-            className="text-3xl md:text-5xl text-gray-900 mb-6"
-            style={
-              {
-                fontWeight: 600,
-                lineHeight: "26px",
-                letterSpacing: "-1.6px",
-                "@media (min-width: 768px)": {
-                  lineHeight: "40px",
-                },
-              } as React.CSSProperties
-            }
-          >
-            Ils nous font confiance
-          </h2>
+          <H2>Ils nous font confiance</H2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (

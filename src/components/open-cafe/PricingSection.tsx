@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { H2 } from "../ui/typography";
 
 const pricingPlans = [
   {
@@ -51,21 +52,7 @@ export default function PricingSection() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2
-            className="text-3xl md:text-5xl text-gray-900 mb-6"
-            style={
-              {
-                fontWeight: 600,
-                lineHeight: "26px",
-                letterSpacing: "-1.6px",
-                "@media (min-width: 768px)": {
-                  lineHeight: "40px",
-                },
-              } as React.CSSProperties
-            }
-          >
-            Des tarifs accessibles et flexibles
-          </h2>
+          <H2>Des tarifs accessibles et flexibles</H2>
           <p
             className="text-lg text-gray-600 max-w-3xl mx-auto"
             style={{

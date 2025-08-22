@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Wifi, Coffee, Printer, Users } from "lucide-react";
+import { H2 } from "../ui/typography";
 
 export default function FacilitiesSection() {
   return (
@@ -9,16 +10,7 @@ export default function FacilitiesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2
-              className="text-3xl md:text-5xl text-gray-900 mb-6"
-              style={{
-                fontWeight: 600,
-                lineHeight: "40px",
-                letterSpacing: "-1.6px",
-              }}
-            >
-              Des équipements modernes et 100 % opérationnels
-            </h2>
+            <H2>Des équipements modernes et 100 % opérationnels</H2>
             <p className="text-lg text-gray-600 mb-8">
               Concentrez-vous sur votre travail, nous nous occupons du reste.
               Tous nos équipements sont prêts à l&apos;emploi et régulièrement
