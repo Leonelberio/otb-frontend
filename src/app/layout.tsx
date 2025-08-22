@@ -110,7 +110,7 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#8ABF37" />
+        <meta name="theme-color" content="#8BBE3D" />
 
         {/* Structured Data */}
         <script
@@ -146,7 +146,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-metropolis antialiased">
+      <body className="antialiased">
         <QueryProvider>
           <Header />
           {children}

@@ -28,10 +28,21 @@ export default function ProcessSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
             Comment ça marche ?
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
             En 4 étapes simples, obtenez votre adresse professionnelle et
             démarrez votre activité.
           </p>
@@ -43,7 +54,7 @@ export default function ProcessSection() {
               <div className="relative">
                 <div
                   className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <step.icon className="w-10 h-10 text-white" />
                 </div>

@@ -8,11 +8,24 @@ export default function AdaptedSpacesSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px",
+              }}
+            >
               Des espaces adaptés à chaque usage
             </h2>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p
+              className="text-lg text-gray-600 mb-8"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}
+            >
               Besoin d&apos;un bureau privé ou d&apos;une salle pour vos
               événements ? Open The Box (OTB) vous aide à trouver l&apos;espace
               parfait, selon votre activité, vos horaires et votre budget.
@@ -23,11 +36,17 @@ export default function AdaptedSpacesSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Building2 className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Bureaux privatifs
                 </p>
               </div>
@@ -35,11 +54,17 @@ export default function AdaptedSpacesSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <MessageCircle className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Salles de réunion et conférences
                 </p>
               </div>
@@ -47,19 +72,29 @@ export default function AdaptedSpacesSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Briefcase className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Espaces pour formations, ateliers ou RDV clients
                 </p>
               </div>
             </div>
 
             <Button
-              className="text-white px-8 py-4 text-lg hover:opacity-90"
-              style={{ backgroundColor: "#8ABF37" }}
+              className="text-white hover:opacity-90"
+              style={{ 
+                backgroundColor: "#8BBE3D",
+                fontSize: "16px",
+                padding: "16px 32px"
+              }}
             >
               Réserver un espace
             </Button>

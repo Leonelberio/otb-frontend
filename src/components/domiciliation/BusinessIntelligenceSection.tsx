@@ -14,7 +14,14 @@ export default function BusinessIntelligenceSection() {
           </div>
 
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
               Veille et newsletter sur le business au Togo
             </h2>
             <p className="text-lg text-gray-600 mb-8">
@@ -26,7 +33,7 @@ export default function BusinessIntelligenceSection() {
               <div className="flex items-start space-x-3">
                 <TrendingUp
                   className="w-6 h-6 mt-1"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900">
@@ -40,7 +47,7 @@ export default function BusinessIntelligenceSection() {
               <div className="flex items-start space-x-3">
                 <Calendar
                   className="w-6 h-6 mt-1"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900">
@@ -54,7 +61,7 @@ export default function BusinessIntelligenceSection() {
               <div className="flex items-start space-x-3">
                 <FileText
                   className="w-6 h-6 mt-1"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900">
@@ -69,7 +76,7 @@ export default function BusinessIntelligenceSection() {
 
             <Button
               className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               Profiter de l&apos;offre
             </Button>

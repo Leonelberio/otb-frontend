@@ -21,7 +21,7 @@ export default function PropertiesSection() {
     {
       title: "SouthHill Apartment",
       type: "Apartment",
-      style: { backgroundColor: "#8ABF37" },
+      style: { backgroundColor: "#8BBE3D" },
     },
     {
       title: "Pluta Residences",
@@ -45,7 +45,11 @@ export default function PropertiesSection() {
               <br />
               Comfortable Residence
             </h2>
-            <p className="text-gray-600 max-w-md">
+            <p className="text-gray-600 max-w-md"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
               We have a recommendation for a confortable home for your family.
               There with a garden and spacious design, please see our residence
               recommendations below:
@@ -53,7 +57,7 @@ export default function PropertiesSection() {
           </div>
           <Button
             className="text-white px-8 hidden md:block hover:opacity-90"
-            style={{ backgroundColor: "#8ABF37" }}
+            style={{ backgroundColor: "#8BBE3D" }}
           >
             See More
           </Button>
@@ -89,7 +93,7 @@ export default function PropertiesSection() {
         <div className="mt-8 text-center md:hidden">
           <Button
             className="text-white px-8 hover:opacity-90"
-            style={{ backgroundColor: "#8ABF37" }}
+            style={{ backgroundColor: "#8BBE3D" }}
           >
             See More
           </Button>

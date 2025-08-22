@@ -217,7 +217,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               <span
                 key={index}
                 className="px-3 py-1 text-sm font-medium rounded-full"
-                style={{ backgroundColor: "#8ABF37", color: "white" }}
+                style={{ backgroundColor: "#8BBE3D", color: "white" }}
               >
                 {category}
               </span>

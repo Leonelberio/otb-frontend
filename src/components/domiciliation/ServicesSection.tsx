@@ -17,10 +17,21 @@ export default function ServicesSection() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
             Nos services de domiciliation
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
             Une solution complète pour domicilier votre entreprise et bénéficier
             de tous nos services d&apos;accompagnement.
           </p>
@@ -32,7 +43,7 @@ export default function ServicesSection() {
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
                 Domiciliation d&apos;entreprise
               </h3>
-              <p className="text-4xl font-bold" style={{ color: "#8ABF37" }}>
+              <p className="text-4xl font-bold" style={{ color: "#8BBE3D" }}>
                 240.000 F CFA
               </p>
               <p className="text-lg text-gray-600">par an</p>
@@ -43,7 +54,7 @@ export default function ServicesSection() {
                 <div key={index} className="flex items-start space-x-3">
                   <div
                     className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm font-bold mt-1 flex-shrink-0"
-                    style={{ backgroundColor: "#8ABF37" }}
+                    style={{ backgroundColor: "#8BBE3D" }}
                   >
                     <Check className="w-4 h-4" />
                   </div>
@@ -55,7 +66,7 @@ export default function ServicesSection() {
             <div className="text-center">
               <Button
                 className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
-                style={{ backgroundColor: "#8ABF37" }}
+                style={{ backgroundColor: "#8BBE3D" }}
               >
                 Continuer
               </Button>

@@ -56,10 +56,21 @@ export default function PropertiesListingSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
             Découvrez nos espaces de coworking
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
             Des espaces adaptés à tous les styles de travail, du coworking
             dynamique aux bureaux privés.
           </p>
@@ -98,7 +109,7 @@ export default function PropertiesListingSection() {
                   <p className="text-gray-600 mb-4">{space.description}</p>
                   <Button
                     className="w-full text-white hover:opacity-90 transition-all duration-200"
-                    style={{ backgroundColor: "#8ABF37" }}
+                    style={{ backgroundColor: "#8BBE3D" }}
                   >
                     Réserver
                   </Button>
@@ -111,7 +122,7 @@ export default function PropertiesListingSection() {
         <div className="text-center mt-12">
           <Button
             className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
-            style={{ backgroundColor: "#8ABF37" }}
+            style={{ backgroundColor: "#8BBE3D" }}
           >
             Profiter de l&apos;offre
           </Button>

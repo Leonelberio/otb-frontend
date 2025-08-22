@@ -5,7 +5,14 @@ export default function BenefitsSection() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
             Les avantages de la domiciliation Open The Box
           </h2>
         </div>
@@ -14,7 +21,7 @@ export default function BenefitsSection() {
           <div className="text-center">
             <div
               className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               <Shield className="w-8 h-8 text-white" />
             </div>
@@ -29,7 +36,7 @@ export default function BenefitsSection() {
           <div className="text-center">
             <div
               className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               <Clock className="w-8 h-8 text-white" />
             </div>
@@ -42,7 +49,7 @@ export default function BenefitsSection() {
           <div className="text-center">
             <div
               className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               <Users className="w-8 h-8 text-white" />
             </div>
@@ -57,7 +64,7 @@ export default function BenefitsSection() {
           <div className="text-center">
             <div
               className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               <Zap className="w-8 h-8 text-white" />
             </div>

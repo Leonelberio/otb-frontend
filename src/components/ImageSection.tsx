@@ -14,7 +14,7 @@ export default function ImageSection() {
       <div className="mb-16">
         <div
           className="h-96 rounded-lg mx-4 md:mx-8 relative overflow-hidden"
-          style={{ background: "linear-gradient(to right, #8ABF37, #6BA02E)" }}
+          style={{ background: "linear-gradient(to right, #8BBE3D, #6BA02E)" }}
         >
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/40 to-transparent"></div>

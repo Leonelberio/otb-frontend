@@ -23,11 +23,24 @@ export default function FacilitiesSection() {
 
           {/* Right Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px",
+              }}
+            >
               Des espaces équipés et 100 % opérationnels
             </h2>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p
+              className="text-lg text-gray-600 mb-8"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}
+            >
               Concentrez-vous sur votre réunion, Open The Box (OTB)
               s&apos;occupe du reste. Chaque espace est prêt à l&apos;emploi,
               sécurisé et connecté.
@@ -38,11 +51,17 @@ export default function FacilitiesSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Zap className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Électricité garantie (groupe électrogène de secours)
                 </p>
               </div>
@@ -50,11 +69,17 @@ export default function FacilitiesSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Wifi className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Wifi haut débit avec écran TV ou projecteur à disposition
                 </p>
               </div>
@@ -62,11 +87,17 @@ export default function FacilitiesSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Volume2 className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Sonorisation disponible pour vos conférences et présentations
                 </p>
               </div>
@@ -74,11 +105,17 @@ export default function FacilitiesSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Shield className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Sécurité assurée : extincteurs, sorties de secours, normes
                   respectées
                 </p>
@@ -86,8 +123,12 @@ export default function FacilitiesSection() {
             </div>
 
             <Button
-              className="text-white px-8 py-4 text-lg hover:opacity-90"
-              style={{ backgroundColor: "#8ABF37" }}
+              className="text-white hover:opacity-90"
+              style={{ 
+                backgroundColor: "#8BBE3D",
+                fontSize: "16px",
+                padding: "16px 32px"
+              }}
             >
               Réserver un espace
             </Button>

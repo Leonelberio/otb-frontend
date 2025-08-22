@@ -60,7 +60,14 @@ export default function GoogleReviewsSection() {
               className="h-8 w-auto"
             />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
             Ce que les coworkers pensent de l&apos;Open Café
           </h2>
           <div className="flex items-center justify-center space-x-2 mb-4">

@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'metropolis': ['Metropolis', 'system-ui', 'sans-serif'],
+        'sans': ['Metropolis', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
     },
   },

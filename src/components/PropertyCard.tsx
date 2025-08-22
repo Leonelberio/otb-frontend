@@ -37,7 +37,7 @@ export default function PropertyCard({
             {/* Category badge */}
             <div
               className="absolute top-3 left-3 px-3 py-1 rounded-full text-sm font-medium text-white"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               {category}
             </div>
@@ -53,7 +53,7 @@ export default function PropertyCard({
         <div className="p-4">
           {/* Price and Capacity */}
           <div className="flex justify-between items-start mb-2">
-            <div className="text-2xl font-bold" style={{ color: "#8ABF37" }}>
+            <div className="text-2xl font-bold" style={{ color: "#8BBE3D" }}>
               {price}
             </div>
             <div className="flex items-center text-gray-600 text-sm">

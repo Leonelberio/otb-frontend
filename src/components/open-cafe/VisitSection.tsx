@@ -7,7 +7,14 @@ export default function VisitSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
               Visite gratuite, sur rendez-vous 7j/7
             </h2>
             <p className="text-lg text-gray-600 mb-8">
@@ -20,7 +27,7 @@ export default function VisitSection() {
               <div className="flex items-start space-x-3">
                 <Calendar
                   className="w-6 h-6 mt-1"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900">
@@ -32,7 +39,7 @@ export default function VisitSection() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Clock className="w-6 h-6 mt-1" style={{ color: "#8ABF37" }} />
+                <Clock className="w-6 h-6 mt-1" style={{ color: "#8BBE3D" }} />
                 <div>
                   <h4 className="font-semibold text-gray-900">
                     Horaires flexibles
@@ -41,7 +48,7 @@ export default function VisitSection() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Users className="w-6 h-6 mt-1" style={{ color: "#8ABF37" }} />
+                <Users className="w-6 h-6 mt-1" style={{ color: "#8BBE3D" }} />
                 <div>
                   <h4 className="font-semibold text-gray-900">
                     Rencontre avec la communauté
@@ -55,7 +62,7 @@ export default function VisitSection() {
 
             <Button
               className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               Profiter de l&apos;offre
             </Button>

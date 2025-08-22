@@ -5,10 +5,21 @@ export default function PricingSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
             Des tarifs transparents et accessibles
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
             Pas de frais cachés, pas de surprise. Nos tarifs sont clairs et
             adaptés à tous les budgets.
           </p>
@@ -21,25 +32,25 @@ export default function PricingSection() {
             </h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <Check className="w-5 h-5" style={{ color: "#8ABF37" }} />
+                <Check className="w-5 h-5" style={{ color: "#8BBE3D" }} />
                 <span className="text-gray-700">
                   Pas de frais d&apos;installation
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Check className="w-5 h-5" style={{ color: "#8ABF37" }} />
+                <Check className="w-5 h-5" style={{ color: "#8BBE3D" }} />
                 <span className="text-gray-700">
                   Résiliation gratuite à tout moment
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Check className="w-5 h-5" style={{ color: "#8ABF37" }} />
+                <Check className="w-5 h-5" style={{ color: "#8BBE3D" }} />
                 <span className="text-gray-700">
                   Facturation mensuelle simple
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Check className="w-5 h-5" style={{ color: "#8ABF37" }} />
+                <Check className="w-5 h-5" style={{ color: "#8BBE3D" }} />
                 <span className="text-gray-700">
                   Réduction pour engagement annuel
                 </span>
@@ -66,7 +77,7 @@ export default function PricingSection() {
               </div>
             </div>
             <div className="mt-6 p-4 bg-green-50 rounded-lg">
-              <p className="text-sm" style={{ color: "#8ABF37" }}>
+              <p className="text-sm" style={{ color: "#8BBE3D" }}>
                 <strong>Offre spéciale :</strong> -20% sur le premier mois pour
                 toute nouvelle inscription !
               </p>

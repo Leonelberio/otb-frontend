@@ -23,11 +23,24 @@ export default function VisitSection() {
 
           {/* Right Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px",
+              }}
+            >
               Visite gratuite, sur rendez-vous 7j/7
             </h2>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p
+              className="text-lg text-gray-600 mb-8"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}
+            >
               Open The Box vous accueille tous les jours, y compris le week-end,
               sur simple demande.
             </p>
@@ -37,11 +50,17 @@ export default function VisitSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Calendar className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Visites sur rendez-vous, selon vos disponibilités
                 </p>
               </div>
@@ -49,11 +68,17 @@ export default function VisitSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Ticket className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Aucun frais de visite
                 </p>
               </div>
@@ -61,11 +86,17 @@ export default function VisitSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Clock className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Ouverture étendue, pour s&apos;adapter à vos contraintes
                   horaires
                 </p>
@@ -73,8 +104,12 @@ export default function VisitSection() {
             </div>
 
             <Button
-              className="text-white px-8 py-4 text-lg hover:opacity-90"
-              style={{ backgroundColor: "#8ABF37" }}
+              className="text-white hover:opacity-90"
+              style={{ 
+                backgroundColor: "#8BBE3D",
+                fontSize: "16px",
+                padding: "16px 32px"
+              }}
             >
               Réserver un espace
             </Button>

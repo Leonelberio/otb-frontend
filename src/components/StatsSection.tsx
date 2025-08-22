@@ -20,11 +20,11 @@ export default function StatsSection() {
         <div className="grid grid-cols-3 gap-4 md:gap-8 text-center">
           <div className="flex flex-col items-center">
             <div className="mb-4 p-3 rounded-full bg-green-100">
-              <Building2 className="w-8 h-8" style={{ color: "#8ABF37" }} />
+              <Building2 className="w-8 h-8" style={{ color: "#8BBE3D" }} />
             </div>
             <div
               className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2"
-              style={{ color: "#8ABF37" }}
+              style={{ color: "#8BBE3D" }}
             >
               25+
             </div>
@@ -33,11 +33,11 @@ export default function StatsSection() {
 
           <div className="flex flex-col items-center">
             <div className="mb-4 p-3 rounded-full bg-green-100">
-              <Calendar className="w-8 h-8" style={{ color: "#8ABF37" }} />
+              <Calendar className="w-8 h-8" style={{ color: "#8BBE3D" }} />
             </div>
             <div
               className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2"
-              style={{ color: "#8ABF37" }}
+              style={{ color: "#8BBE3D" }}
             >
               850+
             </div>

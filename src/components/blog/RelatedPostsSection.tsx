@@ -97,12 +97,23 @@ export default function RelatedPostsSection({
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2
+            className="text-3xl md:text-4xl text-gray-900 mb-4"
+            style={{
+              fontWeight: 600,
+              lineHeight: "40px",
+              letterSpacing: "-3px",
+            }}
+          >
             {relatedPosts.length > 0
               ? "Articles similaires"
               : "Articles récents"}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
             {relatedPosts.length > 0
               ? "Découvrez d'autres articles sur des sujets similaires"
               : "Découvrez nos derniers articles"}
@@ -118,7 +129,7 @@ export default function RelatedPostsSection({
                 variant="outline"
                 size="icon"
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-gray-50"
-                style={{ borderColor: "#8ABF37", color: "#8ABF37" }}
+                style={{ borderColor: "#8BBE3D", color: "#8BBE3D" }}
               >
                 <ArrowLeft className="w-4 h-4" />
               </Button>
@@ -127,7 +138,7 @@ export default function RelatedPostsSection({
                 variant="outline"
                 size="icon"
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-gray-50"
-                style={{ borderColor: "#8ABF37", color: "#8ABF37" }}
+                style={{ borderColor: "#8BBE3D", color: "#8BBE3D" }}
               >
                 <ArrowRight className="w-4 h-4" />
               </Button>
@@ -171,7 +182,7 @@ export default function RelatedPostsSection({
                                   <span
                                     key={`${post.id}-${category}-${index}`}
                                     className="inline-block px-3 py-1 text-white text-xs font-medium rounded-full mr-2"
-                                    style={{ backgroundColor: "#8ABF37" }}
+                                    style={{ backgroundColor: "#8BBE3D" }}
                                   >
                                     {category}
                                   </span>
@@ -208,8 +219,8 @@ export default function RelatedPostsSection({
                               size="sm"
                               className="w-full border-2 hover:bg-gray-50 transition-all duration-200 text-sm"
                               style={{
-                                borderColor: "#8ABF37",
-                                color: "#8ABF37",
+                                borderColor: "#8BBE3D",
+                                color: "#8BBE3D",
                               }}
                               onClick={() =>
                                 (window.location.href = `/blog/${post.slug}`)
@@ -240,7 +251,7 @@ export default function RelatedPostsSection({
                   }`}
                   style={{
                     backgroundColor:
-                      index === currentSlide ? "#8ABF37" : undefined,
+                      index === currentSlide ? "#8BBE3D" : undefined,
                   }}
                 />
               ))}

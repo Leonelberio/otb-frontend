@@ -7,7 +7,14 @@ export default function PartnerNetworkSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
               Des avantages chez un réseau de partenaires
             </h2>
             <p className="text-lg text-gray-600 mb-8">
@@ -25,7 +32,7 @@ export default function PartnerNetworkSection() {
               <div className="flex items-start space-x-3">
                 <Building2
                   className="w-6 h-6 mt-1"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900">
@@ -37,7 +44,7 @@ export default function PartnerNetworkSection() {
               <div className="flex items-start space-x-3">
                 <CreditCard
                   className="w-6 h-6 mt-1"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 <div>
                   <h4 className="font-semibold text-gray-900">
@@ -47,7 +54,7 @@ export default function PartnerNetworkSection() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Target className="w-6 h-6 mt-1" style={{ color: "#8ABF37" }} />
+                <Target className="w-6 h-6 mt-1" style={{ color: "#8BBE3D" }} />
                 <div>
                   <h4 className="font-semibold text-gray-900">
                     Marketing et communication
@@ -59,7 +66,7 @@ export default function PartnerNetworkSection() {
 
             <Button
               className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               Profiter de l&apos;offre
             </Button>

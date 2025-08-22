@@ -78,7 +78,14 @@ export default function PropertiesListingSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+            className="text-4xl md:text-5xl text-gray-900 mb-6"
+            style={{
+              fontWeight: 600,
+              lineHeight: "40px",
+              letterSpacing: "-3px"
+            }}
+          >
             Découvrez nos salles et bureaux en images
           </h2>
         </div>
@@ -115,7 +122,7 @@ export default function PropertiesListingSection() {
         <div className="text-center">
           <Button
             className="text-white px-8 py-4 text-lg hover:opacity-90"
-            style={{ backgroundColor: "#8ABF37" }}
+            style={{ backgroundColor: "#8BBE3D" }}
           >
             Réserver un espace
           </Button>
@@ -125,7 +132,7 @@ export default function PropertiesListingSection() {
       {/* Custom Swiper Styles */}
       <style jsx global>{`
         .properties-swiper .swiper-pagination-bullet-active {
-          background-color: #8abf37;
+          background-color: #8bbe3d;
         }
       `}</style>
     </section>

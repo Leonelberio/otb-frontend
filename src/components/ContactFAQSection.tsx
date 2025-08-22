@@ -96,10 +96,21 @@ export default function ContactFAQSection() {
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+            className="text-4xl md:text-5xl text-gray-900 mb-6"
+            style={{
+              fontWeight: 600,
+              lineHeight: "40px",
+              letterSpacing: "-3px"
+            }}
+          >
             Contact & FAQ
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
             Une question ? Un projet ? Contactez-nous directement ou consultez
             nos réponses aux questions fréquentes.
           </p>
@@ -112,7 +123,7 @@ export default function ContactFAQSection() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <MessageCircle
                   className="w-6 h-6 mr-2"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 Contactez-nous
               </h3>
@@ -210,7 +221,7 @@ export default function ContactFAQSection() {
                 <Button
                   type="submit"
                   className="w-full text-white py-3 text-lg hover:opacity-90 transition-all duration-200"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Send className="w-4 h-4 mr-2" />
                   Envoyer le message
@@ -223,7 +234,7 @@ export default function ContactFAQSection() {
               <div className="flex items-center space-x-3">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Phone className="w-5 h-5 text-white" />
                 </div>
@@ -236,7 +247,7 @@ export default function ContactFAQSection() {
               <div className="flex items-center space-x-3">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Mail className="w-5 h-5 text-white" />
                 </div>
@@ -249,7 +260,7 @@ export default function ContactFAQSection() {
               <div className="flex items-center space-x-3">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <MapPin className="w-5 h-5 text-white" />
                 </div>
@@ -262,7 +273,7 @@ export default function ContactFAQSection() {
               <div className="flex items-center space-x-3">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Clock className="w-5 h-5 text-white" />
                 </div>
@@ -280,7 +291,7 @@ export default function ContactFAQSection() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <ChevronDown
                   className="w-6 h-6 mr-2"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 Questions fréquentes
               </h3>
@@ -317,7 +328,7 @@ export default function ContactFAQSection() {
                   variant="secondary"
                   className="w-full bg-white hover:bg-gray-100"
                   style={{
-                    color: "#8ABF37",
+                    color: "#8BBE3D",
                   }}
                   onClick={() => window.open("tel:+22891280454")}
                 >
@@ -328,7 +339,7 @@ export default function ContactFAQSection() {
                   variant="secondary"
                   className="w-full bg-white hover:bg-gray-100"
                   style={{
-                    color: "#8ABF37",
+                    color: "#8BBE3D",
                   }}
                   onClick={() => window.open("mailto:contact@openthebox.space")}
                 >

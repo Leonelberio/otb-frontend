@@ -24,7 +24,14 @@ export default function BenefitsSection() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 
+            className="text-4xl md:text-5xl text-gray-900 mb-4"
+            style={{
+              fontWeight: 600,
+              lineHeight: "40px",
+              letterSpacing: "-3px"
+            }}
+          >
             Benefit of Choosing Us
           </h2>
         </div>
@@ -34,14 +41,18 @@ export default function BenefitsSection() {
             <div key={index} className="text-center md:text-left">
               <div
                 className="text-3xl font-bold mb-4"
-                style={{ color: "#8ABF37" }}
+                style={{ color: "#8BBE3D" }}
               >
                 {benefit.number}
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 leading-tight">
                 {benefit.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
                 {benefit.description}
               </p>
             </div>

@@ -24,7 +24,7 @@ export default function ProgressBar() {
         className="h-full transition-all duration-300 ease-out"
         style={{
           width: `${progress}%`,
-          backgroundColor: "#8ABF37",
+          backgroundColor: "#8BBE3D",
         }}
       />
     </div>

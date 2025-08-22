@@ -5,10 +5,21 @@ export default function ProblemSolutionSection() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
             Arrêter de travailler seul !
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
             Vous êtes entrepreneur, freelance ou télétravailleur ? Rejoignez
             notre communauté de professionnels dynamiques dans un espace de
             coworking moderne et convivial. Travaillez, collaborez et développez
@@ -25,7 +36,7 @@ export default function ProblemSolutionSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm font-bold mt-1"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   ✓
                 </div>
@@ -41,7 +52,7 @@ export default function ProblemSolutionSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm font-bold mt-1"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   ✓
                 </div>
@@ -58,7 +69,7 @@ export default function ProblemSolutionSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm font-bold mt-1"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   ✓
                 </div>
@@ -74,7 +85,7 @@ export default function ProblemSolutionSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm font-bold mt-1"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   ✓
                 </div>
@@ -92,7 +103,7 @@ export default function ProblemSolutionSection() {
             <div className="mt-8">
               <Button
                 className="text-white px-8 py-3 text-lg hover:opacity-90 transition-all duration-200"
-                style={{ backgroundColor: "#8ABF37" }}
+                style={{ backgroundColor: "#8BBE3D" }}
               >
                 Profiter de l&apos;offre
               </Button>
@@ -107,35 +118,35 @@ export default function ProblemSolutionSection() {
               <li className="flex items-center space-x-2">
                 <span
                   className="w-2 h-2 rounded-full"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 ></span>
                 <span>Espace de travail dédié</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span
                   className="w-2 h-2 rounded-full"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 ></span>
                 <span>Wifi fibre optique 1Gbps</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span
                   className="w-2 h-2 rounded-full"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 ></span>
                 <span>Café et snacks inclus</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span
                   className="w-2 h-2 rounded-full"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 ></span>
                 <span>Salles de réunion</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span
                   className="w-2 h-2 rounded-full"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 ></span>
                 <span>Événements de networking</span>
               </li>

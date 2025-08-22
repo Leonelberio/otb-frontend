@@ -49,7 +49,7 @@ The system prompt in `/src/app/api/chat/route.ts` contains:
 
 ### Styling
 The chatbot uses the Open The Box brand colors:
-- Primary green: `#8ABF37`
+- Primary green: `#8BBE3D`
 - White background
 - Gray text for messages
 

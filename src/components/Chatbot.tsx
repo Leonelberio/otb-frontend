@@ -100,7 +100,7 @@ export default function Chatbot() {
       <Button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
-        style={{ backgroundColor: "#8ABF37" }}
+        style={{ backgroundColor: "#8BBE3D" }}
       >
         {isOpen ? (
           <X className="w-6 h-6 text-white" />
@@ -115,7 +115,7 @@ export default function Chatbot() {
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-gray-50 rounded-t-lg">
             <div className="flex items-center space-x-2">
-              <Bot className="w-5 h-5" style={{ color: "#8ABF37" }} />
+              <Bot className="w-5 h-5" style={{ color: "#8BBE3D" }} />
               <h3 className="font-semibold text-gray-900">
                 Assistant Open The Box
               </h3>
@@ -150,7 +150,7 @@ export default function Chatbot() {
                     {!message.isUser && (
                       <Bot
                         className="w-4 h-4 mt-0.5 flex-shrink-0"
-                        style={{ color: "#8ABF37" }}
+                        style={{ color: "#8BBE3D" }}
                       />
                     )}
                     <div className="flex-1">
@@ -173,7 +173,7 @@ export default function Chatbot() {
               <div className="flex justify-start">
                 <div className="bg-gray-100 rounded-lg px-3 py-2">
                   <div className="flex items-center space-x-2">
-                    <Bot className="w-4 h-4" style={{ color: "#8ABF37" }} />
+                    <Bot className="w-4 h-4" style={{ color: "#8BBE3D" }} />
                     <div className="flex space-x-1">
                       <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
                       <div
@@ -207,7 +207,7 @@ export default function Chatbot() {
                 onClick={sendMessage}
                 disabled={!inputValue.trim() || isLoading}
                 className="px-3"
-                style={{ backgroundColor: "#8ABF37" }}
+                style={{ backgroundColor: "#8BBE3D" }}
               >
                 <Send className="w-4 h-4" />
               </Button>

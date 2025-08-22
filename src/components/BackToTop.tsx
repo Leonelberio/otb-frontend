@@ -33,7 +33,7 @@ export default function BackToTop() {
         <Button
           onClick={scrollToTop}
           className="fixed bottom-8 right-24 z-50 w-12 h-12 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
-          style={{ backgroundColor: "#8ABF37" }}
+          style={{ backgroundColor: "#8BBE3D" }}
         >
           <ChevronUp className="w-6 h-6 text-white" />
         </Button>

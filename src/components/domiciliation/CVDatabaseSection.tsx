@@ -14,7 +14,14 @@ export default function CVDatabaseSection() {
           </div>
 
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
               CVthèque pour vous aider à recruter au Togo
             </h2>
             <p className="text-lg text-gray-600 mb-8">
@@ -33,20 +40,20 @@ export default function CVDatabaseSection() {
               <div className="flex items-center space-x-3">
                 <GraduationCap
                   className="w-6 h-6"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 <span className="text-gray-700">
                   Profils classés par secteur d&apos;activité
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Briefcase className="w-6 h-6" style={{ color: "#8ABF37" }} />
+                <Briefcase className="w-6 h-6" style={{ color: "#8BBE3D" }} />
                 <span className="text-gray-700">
                   Différents niveaux d&apos;expérience
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <RefreshCw className="w-6 h-6" style={{ color: "#8ABF37" }} />
+                <RefreshCw className="w-6 h-6" style={{ color: "#8BBE3D" }} />
                 <span className="text-gray-700">
                   Base de données régulièrement mise à jour
                 </span>
@@ -55,7 +62,7 @@ export default function CVDatabaseSection() {
 
             <Button
               className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               Profiter de l&apos;offre
             </Button>

@@ -8,11 +8,24 @@ export default function PricingSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px",
+              }}
+            >
               Des tarifs accessibles et flexibles
             </h2>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p
+              className="text-lg text-gray-600 mb-8"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}
+            >
               Chez Open The Box, vous payez uniquement ce que vous utilisez. Pas
               de frais cachés, pas de forfait inutile. Des espaces flexibles,
               des prix clairs.
@@ -23,11 +36,17 @@ export default function PricingSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Clock className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Location à l&apos;heure pour vos réunions, conférences ou
                   formations
                 </p>
@@ -36,11 +55,17 @@ export default function PricingSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Users className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Bureaux privatifs à louer à la semaine ou au mois
                 </p>
               </div>
@@ -48,11 +73,17 @@ export default function PricingSection() {
               <div className="flex items-start space-x-3">
                 <div
                   className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg"
-                  style={{ backgroundColor: "#8ABF37" }}
+                  style={{ backgroundColor: "#8BBE3D" }}
                 >
                   <Package className="w-5 h-5 text-white" />
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p
+                  className="text-gray-700"
+                  style={{
+                    lineHeight: "30px",
+                    letterSpacing: "-1px",
+                  }}
+                >
                   Salles de réception modulables pour s&apos;adapter au format
                   de vos événements
                 </p>
@@ -61,7 +92,7 @@ export default function PricingSection() {
 
             <Button
               className="text-white px-8 py-4 text-lg hover:opacity-90"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               Réserver un espace
             </Button>

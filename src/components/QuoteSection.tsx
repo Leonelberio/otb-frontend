@@ -158,10 +158,21 @@ export default function QuoteSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+            className="text-4xl md:text-5xl text-gray-900 mb-6"
+            style={{
+              fontWeight: 600,
+              lineHeight: "40px",
+              letterSpacing: "-3px"
+            }}
+          >
             Obtenir un devis pour une réservation d&apos;espace
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
             Choisissez votre espace, sélectionnez vos dates et obtenez un devis
             instantané. Paiement sécurisé via CashPay ou demande de rappel.
           </p>
@@ -175,7 +186,7 @@ export default function QuoteSection() {
               <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                 <Building2
                   className="w-6 h-6 mr-2"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 1. Choisissez votre espace
               </h3>
@@ -266,7 +277,7 @@ export default function QuoteSection() {
               <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                 <CalendarIcon
                   className="w-6 h-6 mr-2"
-                  style={{ color: "#8ABF37" }}
+                  style={{ color: "#8BBE3D" }}
                 />
                 2. Sélectionnez votre date
               </h3>
@@ -303,7 +314,7 @@ export default function QuoteSection() {
             {/* Step 3: Time and Duration */}
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                <Clock className="w-6 h-6 mr-2" style={{ color: "#8ABF37" }} />
+                <Clock className="w-6 h-6 mr-2" style={{ color: "#8BBE3D" }} />
                 3. Horaires et durée
               </h3>
               <div className="grid grid-cols-2 gap-4">
@@ -354,7 +365,7 @@ export default function QuoteSection() {
               onClick={handleGetQuote}
               disabled={!selectedSpace || !selectedDate || !selectedTime}
               className="w-full text-white py-4 text-lg hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               Obtenir un devis
             </Button>
@@ -393,7 +404,7 @@ export default function QuoteSection() {
                   <div className="border-t pt-4">
                     <div className="flex justify-between items-center text-lg font-bold">
                       <span>Total:</span>
-                      <span className="text-2xl" style={{ color: "#8ABF37" }}>
+                      <span className="text-2xl" style={{ color: "#8BBE3D" }}>
                         {calculateQuote().toLocaleString()} FCFA
                       </span>
                     </div>
@@ -404,7 +415,7 @@ export default function QuoteSection() {
                   <Button
                     onClick={handlePayment}
                     className="w-full text-white py-4 text-lg hover:opacity-90 flex items-center justify-center"
-                    style={{ backgroundColor: "#8ABF37" }}
+                    style={{ backgroundColor: "#8BBE3D" }}
                   >
                     <CreditCard className="w-5 h-5 mr-2" />
                     Payer via CashPay
@@ -414,7 +425,7 @@ export default function QuoteSection() {
                     onClick={handleCallback}
                     variant="outline"
                     className="w-full py-4 text-lg border-2 hover:bg-gray-50 flex items-center justify-center"
-                    style={{ borderColor: "#8ABF37", color: "#8ABF37" }}
+                    style={{ borderColor: "#8BBE3D", color: "#8BBE3D" }}
                   >
                     <Phone className="w-5 h-5 mr-2" />
                     Demander un rappel

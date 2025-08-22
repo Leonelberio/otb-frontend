@@ -49,10 +49,21 @@ export default function PricingSection() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+              className="text-4xl md:text-5xl text-gray-900 mb-6"
+              style={{
+                fontWeight: 600,
+                lineHeight: "40px",
+                letterSpacing: "-3px"
+              }}
+            >
             Des tarifs accessibles et flexibles
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto"
+              style={{
+                lineHeight: "30px",
+                letterSpacing: "-1px",
+              }}>
             Choisissez le forfait qui correspond à vos besoins. Pas
             d&apos;engagement, liberté totale.
           </p>
@@ -67,7 +78,7 @@ export default function PricingSection() {
               }`}
               style={{
                 ...(index === 1 && {
-                  boxShadow: "0 0 0 2px #8ABF37",
+                  boxShadow: "0 0 0 2px #8BBE3D",
                 }),
               }}
             >
@@ -78,7 +89,7 @@ export default function PricingSection() {
                 <div className="mb-4">
                   <span
                     className="text-4xl font-bold"
-                    style={{ color: "#8ABF37" }}
+                    style={{ color: "#8BBE3D" }}
                   >
                     {plan.price}
                   </span>
@@ -87,7 +98,7 @@ export default function PricingSection() {
                 {index === 1 && (
                   <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                     <span
-                      style={{ backgroundColor: "#D1FAE5", color: "#8ABF37" }}
+                      style={{ backgroundColor: "#D1FAE5", color: "#8BBE3D" }}
                     >
                       Populaire
                     </span>
@@ -100,7 +111,7 @@ export default function PricingSection() {
                   <li key={featureIndex} className="flex items-start space-x-3">
                     <Check
                       className="w-5 h-5 mt-0.5"
-                      style={{ color: "#8ABF37" }}
+                      style={{ color: "#8BBE3D" }}
                     />
                     <span className="text-gray-700">{feature}</span>
                   </li>
@@ -114,9 +125,9 @@ export default function PricingSection() {
                     : "bg-white text-green-600 border-2 border-green-600 hover:bg-green-600 hover:text-white"
                 }`}
                 style={{
-                  backgroundColor: index === 1 ? "#8ABF37" : "white",
-                  color: index === 1 ? "white" : "#8ABF37",
-                  borderColor: "#8ABF37",
+                  backgroundColor: index === 1 ? "#8BBE3D" : "white",
+                  color: index === 1 ? "white" : "#8BBE3D",
+                  borderColor: "#8BBE3D",
                 }}
               >
                 Choisir ce forfait
@@ -131,7 +142,7 @@ export default function PricingSection() {
           </p>
           <Button
             className="text-white px-8 py-4 text-lg hover:opacity-90 transition-all duration-200"
-            style={{ backgroundColor: "#8ABF37" }}
+            style={{ backgroundColor: "#8BBE3D" }}
           >
             Profiter de l&apos;offre
           </Button>

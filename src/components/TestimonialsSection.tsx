@@ -2,7 +2,14 @@ export default function TestimonialsSection() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-16">
+        <h2 
+          className="text-4xl md:text-5xl text-gray-900 mb-16"
+          style={{
+            fontWeight: 600,
+            lineHeight: "40px",
+            letterSpacing: "-3px"
+          }}
+        >
           Témoignages de nos clients
         </h2>
 
@@ -17,7 +24,7 @@ export default function TestimonialsSection() {
           <div className="flex items-center justify-center space-x-4">
             <div
               className="w-16 h-16 rounded-full flex items-center justify-center"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               <span className="text-white text-2xl">👨</span>
             </div>
@@ -32,7 +39,7 @@ export default function TestimonialsSection() {
         <div className="flex justify-center space-x-2">
           <div
             className="w-3 h-3 rounded-full"
-            style={{ backgroundColor: "#8ABF37" }}
+            style={{ backgroundColor: "#8BBE3D" }}
           ></div>
           <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
           <div className="w-3 h-3 bg-gray-300 rounded-full"></div>

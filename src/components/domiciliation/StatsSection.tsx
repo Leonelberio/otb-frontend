@@ -9,7 +9,7 @@ export default function StatsSection() {
             <div className="flex justify-center mb-4">
               <div
                 className="w-16 h-16 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: "#8ABF37" }}
+                style={{ backgroundColor: "#8BBE3D" }}
               >
                 <Building2 className="w-8 h-8 text-white" />
               </div>
@@ -22,7 +22,7 @@ export default function StatsSection() {
             <div className="flex justify-center mb-4">
               <div
                 className="w-16 h-16 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: "#8ABF37" }}
+                style={{ backgroundColor: "#8BBE3D" }}
               >
                 <Users className="w-8 h-8 text-white" />
               </div>
@@ -35,7 +35,7 @@ export default function StatsSection() {
             <div className="flex justify-center mb-4">
               <div
                 className="w-16 h-16 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: "#8ABF37" }}
+                style={{ backgroundColor: "#8BBE3D" }}
               >
                 <Star className="w-8 h-8 text-white" />
               </div>
@@ -48,7 +48,7 @@ export default function StatsSection() {
             <div className="flex justify-center mb-4">
               <div
                 className="w-16 h-16 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: "#8ABF37" }}
+                style={{ backgroundColor: "#8BBE3D" }}
               >
                 <FileText className="w-8 h-8 text-white" />
               </div>

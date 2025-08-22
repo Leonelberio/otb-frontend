@@ -218,7 +218,7 @@ export default function BlogListingSection() {
             <Button
               onClick={() => window.location.reload()}
               className="mt-4 text-white"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               Réessayer
             </Button>
@@ -246,7 +246,7 @@ export default function BlogListingSection() {
                       <span
                         key={`${post.id}-${category}-${index}`}
                         className="inline-block px-3 py-1 text-white text-xs font-medium rounded-full mr-2"
-                        style={{ backgroundColor: "#8ABF37" }}
+                        style={{ backgroundColor: "#8BBE3D" }}
                       >
                         {category}
                       </span>
@@ -285,7 +285,7 @@ export default function BlogListingSection() {
                   <Button
                     variant="outline"
                     className="w-full border-2 hover:bg-gray-50 transition-all duration-200"
-                    style={{ borderColor: "#8ABF37", color: "#8ABF37" }}
+                    style={{ borderColor: "#8BBE3D", color: "#8BBE3D" }}
                     onClick={() =>
                       (window.location.href = `/blog/${post.slug}`)
                     }
@@ -311,7 +311,7 @@ export default function BlogListingSection() {
                 setSelectedCategory("all");
               }}
               className="mt-4 text-white"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               Voir tous les articles
             </Button>
@@ -323,7 +323,7 @@ export default function BlogListingSection() {
           <div className="text-center mt-12">
             <Button
               className="text-white px-8 py-4 text-lg hover:opacity-90"
-              style={{ backgroundColor: "#8ABF37" }}
+              style={{ backgroundColor: "#8BBE3D" }}
             >
               Charger plus d&apos;articles
             </Button>

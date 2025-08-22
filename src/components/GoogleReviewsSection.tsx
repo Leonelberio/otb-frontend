@@ -184,7 +184,14 @@ export default function GoogleReviewsSection() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 
+            className="text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-6"
+            style={{
+              fontWeight: 600,
+              lineHeight: "40px",
+              letterSpacing: "-3px"
+            }}
+          >
             Ce que les professionnels pensent de nos espaces
           </h2>
         </div>
@@ -334,7 +341,7 @@ export default function GoogleReviewsSection() {
                       : "bg-gray-300 hover:bg-gray-400"
                   }`}
                   style={{
-                    backgroundColor: currentSlide === i ? "#8ABF37" : undefined,
+                    backgroundColor: currentSlide === i ? "#8BBE3D" : undefined,
                   }}
                 />
               ))}
@@ -347,7 +354,7 @@ export default function GoogleReviewsSection() {
           <Button
             variant="outline"
             className="border-2 hover:bg-gray-50 transition-all duration-200 text-sm lg:text-base"
-            style={{ borderColor: "#8ABF37", color: "#8ABF37" }}
+            style={{ borderColor: "#8BBE3D", color: "#8BBE3D" }}
             onClick={() => {
               // Link to actual Open The Box Google Maps listing
               window.open(
